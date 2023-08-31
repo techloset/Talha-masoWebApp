@@ -8,22 +8,38 @@ const header = () => {
 
     const [navbar, setNavbar] = useState(true)
     return (
-        <div>
-            <div className=' flex justify-center items-center gap-24'>
+        <div className=' font-FREE '>
+            {/* <div className=' flex justify-center items-center gap-24'> */}
 
-                <div className=''>
+                {/* <div className=''>
                     <p className=' font-FREE text-[25px]'>mason studio</p>
-                </div>
+                </div> */}
 
                 <div className='cursor-pointer'>
-                    <Image onClick={() => setNavbar(!navbar)} src='/images/menu.png' width='100' height='100' className='w-[40px] h-[40px] ' />
+                   
+                {/* {
+                    navbar ? (
+                        // <Image onClick={() => setNavbar(!navbar)} src='/images/cross.png' width='100' height='100' className='w-[40px] h-[40px] '  /> 
+                        <p className='w-[40px] h-[40px] items-center' onClick={() => setNavbar(!navbar)}>X</p>
+                        ):(
+                           <Image onClick={() => setNavbar(!navbar)} src='/images/menu.png' width='100' height='100' className='w-[40px] h-[40px] ' />
+                           )
+                        } */}
+
                     {
                         navbar ? (
-                            <div className='absolute left-0 top-10 bg-[#F2CCBA] w-full h-[92%] '>
+                            <div className='absolute left-0 top-0 bg-[#F2CCBA] w-full h-full '>
+                            
+                            <div className='flex   items-center px-[20px] '>
+                                <div className=' w-[50%] flex justify-start text-[18px] mt-[10px]  ' >mason Studio</div>
+                                <div className=' w-[50%] flex justify-end mt-[10px] ' > 
+                                <Image onClick={() => setNavbar(!navbar)} src='/images/cross.png' width='100' height='100' className='w-[40px] h-[40px]  ' />
+                                </div>
+                            </div>
 
                                 <ul className='   px-[15px] '>
-                                    <div className='border-t-[1.5px] border-gray '></div>
 
+                                    <div className='border-t-[1.5px] border-gray '></div>
                                     <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080] '>Projects</li>
 
                                     <div className='border-t-[1.5px] border-gray '></div>
@@ -36,7 +52,7 @@ const header = () => {
 
                                     <div className='border-t-[1.5px] border-gray '></div>
 
-                                    <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080]' >Journal</li>
+                                    <li className='text-[25.6px]  mt-[9px] mb-[7px] text-[#00000080]  ' >Journal</li>
                                     <div className='border-t-[1.5px] border-gray '></div>
 
 
@@ -81,12 +97,18 @@ const header = () => {
 
                             </div>
                         ) : (
-                            <p></p>
-                        )
-                    }
+                            <div className='flex  items-center px-[20px] '>
+                                <div className=' w-[50%] flex justify-start text-[18px] mt-[10px]  ' >mason Studio</div>
+                                <div className=' w-[50%] flex justify-end mt-[10px] ' > 
+                                <Image onClick={() => setNavbar(!navbar)} src='/images/menu.png' width='100' height='100' className='w-[40px] h-[40px]  ' />
+                                </div>
+                            </div>
+                            
+                            )
+                        }
                 </div>
 
-            </div>
+            {/* </div> */}
         </div>
     )
 }
