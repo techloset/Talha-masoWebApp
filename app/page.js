@@ -1,11 +1,12 @@
 
 import React from 'react'
+import Main from './pages/main/main'
 
 
 const page = () => {
   return (
-    <div className='bg-cyan-500'>
-      heelo
+    <div className=''>
+      <Main/>
     </div>
   )
 }

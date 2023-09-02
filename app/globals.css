@@ -9,3 +9,13 @@
     /* src: url("../public/fonts/Product\ Sans\ Regular.ttf") format('truetype'); */
     src: url("../public/fonts/FontsFree-Net-Maison-Neue-Book.ttf") format('truetype') ;
   }
+
+
+  /* .grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .grayscale:hover {
+    filter: grayscale(0%);
+  } */

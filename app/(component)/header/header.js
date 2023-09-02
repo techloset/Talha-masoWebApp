@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const header = () => {
 
-    const [navbar, setNavbar] = useState(true)
+    const [navbar, setNavbar] = useState(false)
     return (
         <div className=' font-FREE '>
             {/* <div className=' flex justify-center items-center gap-24'> */}
