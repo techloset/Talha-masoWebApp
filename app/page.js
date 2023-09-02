@@ -5,7 +5,7 @@ import Main from './pages/main/main'
 
 const page = () => {
   return (
-    <div className=''>
+    <div className=' '>
       <Main/>
     </div>
   )
