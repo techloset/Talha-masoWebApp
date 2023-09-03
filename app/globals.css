@@ -19,3 +19,22 @@
   .grayscale:hover {
     filter: grayscale(0%);
   } */
+
+@layer components {
+ .moon{
+  background-image: url("../public/images/moon.jpeg") ;
+  
+ }
+ .auction{
+  background-image: url("../public/images/auction.jpeg") ;
+  
+ }
+ .group{
+  background-image: url("../public/images/groupphoto.jpeg") ;
+  
+ }
+ .blackman{
+  background-image: url("../public/images/blackman.jpeg") ;
+  
+ }
+}

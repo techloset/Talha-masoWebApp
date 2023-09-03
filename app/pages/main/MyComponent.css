@@ -1,0 +1,4 @@
+.backgroundColorChange {
+    background-color: rgb(241, 243, 234);
+    transition: background-color 0.5s ease;
+}
