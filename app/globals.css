@@ -6,8 +6,9 @@
 
 @font-face {
     font-family: "FREE";
+   
     /* src: url("../public/fonts/Product\ Sans\ Regular.ttf") format('truetype'); */
-    src: url("../public/fonts/FontsFree-Net-Maison-Neue-Book.ttf") format('truetype') ;
+    src: url("../public/fonts/FontsFree-Net-Maison-Neue-Book.ttf")  ;
   }
 
 

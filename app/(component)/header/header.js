@@ -9,7 +9,7 @@ const header = () => {
 
     const [navbar, setNavbar] = useState(false)
     return (
-        <div className=' font-FREE  '>
+        <div className='   '>
 
             <div className='fixed w-[100%] '>
 
@@ -20,7 +20,7 @@ const header = () => {
                             <div className=' flex justify-around items-center '>
                                 {/* mason logo */}
                                 <div>
-                                <Image src='/images/mason.svg' height='10' width='100' />
+                                    <Image src='/images/mason.svg' height='10' width='100' />
                                 </div>
 
 
@@ -37,7 +37,7 @@ const header = () => {
 
                                 <div className='border-t-[1.5px] border-gray '></div>
 
-                                <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080]' > About</li>
+                                <Link href='/pages/about' onClick={() => setNavbar(!navbar)}> <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080]' > About</li> </Link>
 
                                 <div className='border-t-[1.5px] border-gray '></div>
 
@@ -45,7 +45,8 @@ const header = () => {
 
                                 <div className='border-t-[1.5px] border-gray '></div>
 
-                                <li className='text-[25.6px]  mt-[9px] mb-[7px] text-[#00000080]  ' >Journal</li>
+                                <Link href='/pages/journal' onClick={() => setNavbar(!navbar)}> <li className='text-[25.6px]  mt-[9px] mb-[7px] text-[#00000080]  ' >Journal</li> </Link>
+
                                 <div className='border-t-[1.5px] border-gray '></div>
 
 
@@ -90,10 +91,10 @@ const header = () => {
 
                         </div>
                     ) : (
-                        <div className= ' bg-green-500  flex justify-around items-center '>
+                        <div className=' bg-blue-500  flex justify-around items-center '>
                             {/* mason logo */}
                             <div>
-                             <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='10' width='100' /> </Link>
+                                <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='10' width='100' /> </Link>
                             </div>
 
 
