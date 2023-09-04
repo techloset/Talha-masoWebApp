@@ -91,14 +91,14 @@ const header = () => {
 
                         </div>
                     ) : (
-                        <div className=' bg-blue-500  flex justify-around items-center '>
+                        <div className=' bg-blue-500  flex  items-center px-[20px] '>
                             {/* mason logo */}
-                            <div>
-                                <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='10' width='100' /> </Link>
+                            <div className='   '>
+                                <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='10' width='100' className='cursor-pointer w-[70%] '/> </Link>
                             </div>
 
 
-                            <div className=' w-[50%] flex justify-end mt-[10px] ' >
+                            <div className=' w-[100%] flex justify-end mt-[10px] ' >
                                 <Image onClick={() => setNavbar(!navbar)} src='/images/menu.png' width='100' height='100' className='w-[40px] h-[40px] cursor-pointer  ' />
 
                             </div>
