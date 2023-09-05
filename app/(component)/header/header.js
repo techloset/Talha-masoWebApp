@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 import Link from 'next/link'
 
+
 const header = () => {
 
     const [navbar, setNavbar] = useState(false)
@@ -27,11 +28,6 @@ const header = () => {
                                     <Image onClick={() => setNavbar(!navbar)} src='/images/cross.svg' width='100' height='100' className='  w-[20px] h-[20px] cursor-pointer  ' />
 
                                 </div>
-
-
-                                {/* <div className=' w-[50%] flex justify-end mt-[10px] p-[10px] ' >
-                                    <Image onClick={() => setNavbar(!navbar)} src='/images/cross.svg' width='100' height='100' className='  w-[20px] h-[20px] cursor-pointer  ' />
-                                </div> */}
 
                             </div>
 

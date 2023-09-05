@@ -38,4 +38,7 @@
   background-image: url("../public/images/blackman.jpeg") ;
   
  }
+ .active{
+  color: black;
+ }
 }
