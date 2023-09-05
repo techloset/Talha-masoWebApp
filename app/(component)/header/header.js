@@ -23,7 +23,7 @@ const header = () => {
                                     <Link href='/' onClick={() => setNavbar(!navbar)}>  <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className=' cursor-pointer w-[70%] ' /> </Link>
                                 </div>
 
-                                <div className=' w-[100%] flex justify-end mt-[10px]  p-[15px]' >
+                                <div className=' w-[100%] flex justify-end mt-[10px]  p-[10px]' >
                                     <Image onClick={() => setNavbar(!navbar)} src='/images/cross.svg' width='100' height='100' className='  w-[20px] h-[20px] cursor-pointer  ' />
 
                                 </div>
