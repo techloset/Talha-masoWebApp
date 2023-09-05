@@ -3,6 +3,7 @@
 
 import React, { useState } from "react";
 import { data } from './data'
+import Footer from "@/app/(component)/footer/footer";
 
 // import ReactReadMoreReadLess from "react-read-more-read-less";
 
@@ -21,7 +22,7 @@ const page = () => {
 
     return (
 
-        <div className=' absolute -z-10 top-12 px-[20px]   '>
+        <div className=' absolute -z-10 top-12 px-[20px] pb-[45px]  '>
 
             <div className='text-[24px]  '>
                 Journal
@@ -100,7 +101,7 @@ const page = () => {
 
                         <button onClick={toggleReadMoreLess}>{isShowMore ? "Close ↑ " : "Read More ↓"} </button>
 
-                        <div className='my-[20px] border-b-[1px] border-gray-300 '> </div>
+                        <div className='mt-[20px] border-b-[1px] border-gray-300 '> </div>
 
                       
 
@@ -110,7 +111,11 @@ const page = () => {
 
                 ))
             }
+            
+            <Footer/>
+           
 
+            
         </div>
     )
 }

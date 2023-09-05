@@ -1,9 +1,10 @@
 import React from 'react'
 import Image from 'next/image'
+import Footer from '@/app/(component)/footer/footer'
 
 const page = () => {
     return (
-        <div className='bg-green-500 absolute -z-10 top-12 px-[20px] '>
+        <div className=' absolute  -z-10 top-12 px-[20px] pb-[45px] '>
             <p className='text-[25.6px] py-[15px]'>About</p>
             <p className='text-[22.85px]  '>We have an optimistic view of humanity, and we believe in the potency of using design as a tool for actionable change.</p>
             <p className='text-[12.8px] text-[#6E6E6E] my-[18px] '>At Mason Studio, we design thoughtfully and care deeply, guided by our innate need to “make better”.  This is not just to affect the world but to understand both the opportunities we have and the possibilities we can create to bring real value to society, an experience or a personal moment in a meaningful way. </p >
@@ -19,97 +20,176 @@ const page = () => {
 
 
             <Image src='/images/aboutt2.jpg' width='100' height='100' className=' w-full ' />
-            <div className='my-[20px] border-b-[1px] border-indigo-500 '> </div>
+            <div className='my-[20px] border-b-[1px] border-gray-300 '> </div>
             <Image src='/images/about1.jpg' width='100' height='100' className=' w-full mt-[10px]' />
-            <div className='my-[20px] border-b-[1px] border-indigo-500 '> </div>
+            <div className='my-[20px] border-b-[1px] border-gray-300 '> </div>
 
 
             {/* text */}
-            <p> Co-Founder, Executive Director</p>
-            <p>Ashley Rumsey</p>
-            <p>BID Hons, NCIDQ, IDC, ARIDO, LEED AP</p>
-            <p>Ashley Rumsey brings the highest standards to both the design vision of projects and the management of the Mason Studio team. An advocate of purposeful design, Ashley has been a key part of the development of Mason Studio’s innovative research-based process. She ensures design decisions are thoughtfully evaluated based on their potential contribution to the end user, design process, and client’s goals. Her collaborative approach ensures a broad-based perspective, leveraging the skills and knowledge of the entire team to fully inform each design project.
+            <p className='text-[12px] text-[#6E6E6E]'> Co-Founder, Executive Director</p>
+            <p className='text-[18px] '>Ashley Rumsey</p>
+            <p className='text-[12px] text-[#6E6E6E]'>BID Hons, NCIDQ, IDC, ARIDO, LEED AP</p>
+            <p className='text-[12px] text-[#6E6E6E] pt-[12px] pb-[18px] '>Ashley Rumsey brings the highest standards to both the design vision of projects and the management of the Mason Studio team. An advocate of purposeful design, Ashley has been a key part of the development of Mason Studio’s innovative research-based process. She ensures design decisions are thoughtfully evaluated based on their potential contribution to the end user, design process, and client’s goals. Her collaborative approach ensures a broad-based perspective, leveraging the skills and knowledge of the entire team to fully inform each design project.
                 As a respected leader in the Canadian design community, Ashley has also been featured in international design media and regularly participates in thought leadership at notable conferences and events.</p>
 
 
-            <p> Co-Founder, Creative Director</p>
-            <p>Stanley Sun</p>
-            <p>BID Hons, BSC Hons, NCIDQ, IDC, ARIDO, BCIN</p>
-            <p>Stanley Sun’s vision is informed by a unique blend of formal studies in human sciences, fine arts and interior design.  Approaching each challenge with a combined scientific and humanistic perspective, he first observes how people experience and react to the built environment to create a rational and intuitive design solution. Of particular interest to Stanley’s practice is the science of light and the physiological and psychological response people have to light.As an advocate for Canadian design, Stanley has been published widely and has participated as a keynote speaker at leading design conferences. He is also a sessional instructor at his alma mater, Toronto Metropolitan University.</p>
+            <p className='text-[12px] text-[#6E6E6E]'> Co-Founder, Creative Director</p>
+            <p className='text-[18px] '>Stanley Sun</p>
+            <p className='text-[12px] text-[#6E6E6E]' >BID Hons, BSC Hons, NCIDQ, IDC, ARIDO, BCIN</p>
+            <p className='pt-[12px] text-[12.8px] text-[#6E6E6E] '>Stanley Sun’s vision is informed by a unique blend of formal studies in human sciences, fine arts and interior design.  Approaching each challenge with a combined scientific and humanistic perspective, he first observes how people experience and react to the built environment to create a rational and intuitive design solution. Of particular interest to Stanley’s practice is the science of light and the physiological and psychological response people have to light.As an advocate for Canadian design, Stanley has been published widely and has participated as a keynote speaker at leading design conferences. He is also a sessional instructor at his alma mater, Toronto Metropolitan University.</p>
 
-            <div className='my-[20px] border-b-[1px] border-indigo-500 '> </div>
+            <div className='mt-[30px] mb-[20px]  border-b-[1px] border-gray-300 '> </div>
+           
+           
+           
+            {/* Awards links */}
+            <p className='text-[18px] pb-[15px] '>Awards</p>
+            <ul >
 
-            <p>Awards</p>
-            <ul>
-                <li>
-                    2020-ACD Awards / Resilient Reatial Concept
+                <li className='text-[12px] '>
+                    <span className='text-[#000000]'>
+                        2020-ACD Awards /
+                    </span>
+                    <span className='text-[#6E6E6E]'>
+                        Resilient Reatial Concept
+                    </span>
                 </li>
-                <li>
-                    2011-ARIDO / Award of Merit: Cabin Residences
+
+                <li className='text-[12px] '>
+                    <span className='text-[#000000]'>
+                        2011-ARIDO /
+                    </span>
+                    <span className='text-[#6E6E6E]'>
+                        Award of Merit: Cabin Residences
+                    </span>
+
                 </li>
-                <li>
-                    2018-ACD Awards / Resilient Reatial Concept
+                <li className='text-[12px] '>
+                    <span className='text-[#000000]'>
+                        2018-ACD Awards /
+                    </span>
+                    <span className='text-[#6E6E6E]'>
+                        Resilient Reatial Concept
+                    </span>
+
+
                 </li>
-                <li>
-                    2016-ACD Awards / Resilient Reatial Concept
+                <li className='text-[12px] '>
+                    <span className='text-[#000000]'>
+                        2011-ARIDO /
+                    </span>
+                    <span className='text-[#6E6E6E]'>
+                        Award of Merit: Cabin Residences
+                    </span>
+
+
                 </li>
-                <li>
-                    2015-ARIDO / Award of Merit - Virtuous Pie
+                <li className='text-[12px] '>
+                    <span className='text-[#000000]'>
+                        2015-ARIDO /
+                    </span>
+                    <span className='text-[#6E6E6E]'>
+                        Award of Merit - Virtuous Pie
+                    </span>
+
+
                 </li>
-                <li>
-                    2014-Canadian Interiors / Best of Canada - PurParket
+                <li className='text-[12px] '>
+                    <span className='text-[#000000]'>
+                        2014-Canadian Interiors /
+                    </span>
+                    <span className='text-[#6E6E6E]'>
+                        Best of Canada
+                    </span>
+
+
                 </li>
-                <li>
-                    2013-ACD Awards / Resilient Reatial Concept
+                <li className='text-[12px] '>
+                    <span className='text-[#000000]'>
+                        2013-ACD Awards /
+                    </span>
+                    <span className='text-[#6E6E6E]'>
+                        Resilient Reatial Concept
+                    </span>
+
+
                 </li>
-                <li>
-                    2012-Best of Canada Awards / Andaz Hotel
+                <li className='text-[12px] '>
+                    <span className='text-[#000000]'>
+                        2012-Best of Canada Awards /
+                    </span>
+                    <span className='text-[#6E6E6E]'>
+                        Andaz Hotel
+                    </span>
+
+
                 </li>
-                <li>
-                    2011-ARIDO / Award of Merit: Cabin Residences
+                <li className='text-[12px] '>
+                    <span className='text-[#000000]'>
+                        2011-ARIDO /
+                    </span>
+                    <span className='text-[#6E6E6E]'>
+                        Award of Merit: Cabin Residences
+                    </span>
+
+
                 </li>
-                <li>
-                    2010-ACD Awards / Resilient Reatial Concept
+                <li className='text-[12px] '>
+                    <span className='text-[#000000]'>
+                        2010-ACD Awards /
+                    </span>
+                    <span className='text-[#6E6E6E]'>
+                        Resilient Reatial Concept
+                    </span>
+
+
                 </li>
             </ul>
-            <div className='my-[20px] border-b-[1px] border-indigo-500 '> </div>
 
+            <div className='my-[20px] border-b-[1px] border-gray-300 '> </div>
+           
+           
+            {/* Press heading */}
+            <p className='text-[18px] pb-[15px] '>Press</p>
+           
             <ul>
-                <li>2023 - Office Snapshots / Mason Studio Integrated Workspace</li>
-                <li>2023 - Trend Hunter / Mason Studio Redesigned Its Toronto Office For "The Greater Good"</li>
-                <li>2023 - BluPrint Magazine / Work and Inspiration: Mason Studio’s Office as an ideal Workspace</li>
-                <li>2023 - FRAME Magazine / Can workplaces foster social wellbeing beyond their own employees?</li>
-                <li>2023 - Canadian Interiors / Creating Engagement - May/June 2023 cover feature</li>
-                <li>2023 - The Toronto Star / Making Contact across Toronto with award-winning photography</li>
-                <li>2023 - Hotelier Magazine / Hotel bathrooms become a focal point for designers</li>
-                <li>2023 - Dezeen / Mason Studio reimagines its Toronto workspace "for the greater good"</li>
-                <li>2023 - NUVO Magazine / Design Space: Lady Bird Bar by Mason Studio</li>
-                <li>2022 - Interior Design / 10 Questions with Ashley Rumsey and Stanley Sun</li>
-                <li>2022 - Azure / Communal Condo Kitchen</li>
-                <li>2022 - Designlines / Mason Studio thoughtfully designs Regent Park Condominium</li>
-                <li>2022 - Interior Design / Kimpton Banneker Hotel in Washington, D.C.</li>
-                <li>2022 - Wallpaper / Mason Studio put the focus on local artists in the new Kimpton Banneker hotel in Washington, DC</li>
-                <li>2022 - Azure / 8 Inspiring Design Events To Check Out At DesignTO 2022</li>
-                <li>2021 - Forbes / LadyBird Washington DC's most stylish rooftop bar</li>
-                <li>2021 - Interior Design China / Mason Studio's New Work - Runxi Residences</li>
-                <li>2021 - Interior Design / Big Ideas - Mobile Retail</li>
-                <li>2021 - House & Home / Tommy Smythe - Latest Designers To Turn His Head</li>
-                <li>2021 - Design Milk / Friday Five</li>
-                <li>2020 - Azure / Rethinking Retail</li>
-                <li>2020 - Designlines / Show Us Where You Live</li>
-                <li>2020 - Interior Design / Mason Studio Designs Minimalist Shanghai Interior</li>
-                <li>2020 - Pure Luxury / The Beauty of Canadian Design</li>
-                <li>2019 - Design Anthology / New Hotels - Kimpton Saint George</li>
-                <li>2019 - Design Milk / Kimpton Saint George Hotel</li>
-                <li>2019 - Toronto Life / Kimpton Saint George Hotel</li>
-                <li>2018 - Wallpaper / Kimpton Saint George Hotel</li>
-                <li>2018 - New York Times / An Ottawa Hotel is an ode to Canada</li>
-                <li>2018 - Canadian Interiors / Best of Canada: Hospitality, Andaz Hotel</li>
-                <li>2018 - Canadian Interiors / Best of Canada: Retail, Picnic Food</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Office Snapshots /</span> Mason Studio Integrated Workspace</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Trend Hunter /</span> Mason Studio Redesigned Its Toronto Office For "The Greater Good"</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - BluPrint Magazine /</span> Work and Inspiration: Mason Studio’s Office as an ideal Workspace</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - FRAME Magazine /</span> Can workplaces foster social wellbeing beyond their own employees?</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Canadian Interiors /</span> Creating Engagement - May/June 2023 cover feature</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - The Toronto Star /</span> Making Contact across Toronto with award-winning photography</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Hotelier Magazine /</span> Hotel bathrooms become a focal point for designers</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Dezeen /</span> Mason Studio reimagines its Toronto workspace "for the greater good"</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - NUVO Magazine /</span> Design Space: Lady Bird Bar by Mason Studio</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2022 - Interior Design /</span> 10 Questions with Ashley Rumsey and Stanley Sun</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2022 - Azure /</span> Communal Condo Kitchen</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2022 - Designlines /</span> Mason Studio thoughtfully designs Regent Park Condominium</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2022 - Interior Design /</span> Kimpton Banneker Hotel in Washington, D.C.</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2022 - Wallpaper /</span> Mason Studio put the focus on local artists in the new Kimpton Banneker hotel in Washington, DC</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2022 - Azure /</span> 8 Inspiring Design Events To Check Out At DesignTO 2022</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - Forbes /</span> LadyBird Washington DC's most stylish rooftop bar</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - Interior Design China /</span> Mason Studio's New Work - Runxi Residences</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - Interior Design /</span> Big Ideas - Mobile Retail</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - House & Home /</span> Tommy Smythe - Latest Designers To Turn His Head</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - Design Milk /</span> Friday Five</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2020 - Azure /</span> Rethinking Retail</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2020 - Designlines /</span> Show Us Where You Live</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2020 - Interior Design /</span> Mason Studio Designs Minimalist Shanghai Interior</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2020 - Pure Luxury /</span> The Beauty of Canadian Design</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2019 - Design Anthology /</span> New Hotels - Kimpton Saint George</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2019 - Design Milk /</span> Kimpton Saint George Hotel</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2019 - Toronto Life /</span> Kimpton Saint George Hotel</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2018 - Wallpaper /</span> Kimpton Saint George Hotel</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2018 - New York Times /</span> An Ottawa Hotel is an ode to Canada</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2018 - Canadian Interiors /</span> Best of Canada: Hospitality, Andaz Hotel</li>
+                <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2018 - Canadian Interiors /</span> Best of Canada: Retail, Picnic Food</li>
 
             </ul>
 
-            <div className='my-[20px] border-b-[1px] border-indigo-500 '> </div>
+            <div className='mt-[20px] border-b-[1px] border-gray-300 '> </div>
+
+            <Footer/>
         </div>
     )
 }
