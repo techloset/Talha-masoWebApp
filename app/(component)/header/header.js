@@ -33,7 +33,7 @@ const header = () => {
                             <ul className='   px-[15px] '>
 
                                 <div className='border-t-[1.5px] border-gray '></div>
-                                <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080] '>Projects</li>
+                                <Link href='/pages/projects' onClick={() => setNavbar(!navbar)}> <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080] '>Projects</li> </Link>
 
                                 <div className='border-t-[1.5px] border-gray '></div>
 
