@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const header = () => {
 
-    const [navbar, setNavbar] = useState(true)
+    const [navbar, setNavbar] = useState(false)
     return (
         <div className='   '>
 
@@ -20,7 +20,7 @@ const header = () => {
                             <div className=' flex justify-around   items-center px-[20px] '>
                                 {/* mason logo */}
                                 <div className=''>
-                                    <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className=' cursor-pointer w-[70%] ' /> </Link>
+                                    <Link href='/' onClick={() => setNavbar(!navbar)}>  <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className=' cursor-pointer w-[70%] ' /> </Link>
                                 </div>
 
                                 <div className=' w-[100%] flex justify-end mt-[10px]  p-[15px]' >
