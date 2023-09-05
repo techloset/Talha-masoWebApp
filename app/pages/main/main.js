@@ -88,7 +88,7 @@ const main = () => {
 
     return (
 
-        <div className={` ${kalaRang1||kalaRang2||kalaRang3||kalaRang4||kalaRang5||kalaRang6 ? 'backgroundColorChange' : ''}   mt-[20px] px-[15px]   absolute top-10 -z-10 w-[100%] h-[88vh] overflow-y-hidden  `}>
+        <div className={` ${kalaRang1 || kalaRang2 || kalaRang3 || kalaRang4 || kalaRang5 || kalaRang6 ? 'backgroundColorChange' : ''}   mt-[20px] px-[15px]   absolute top-10 -z-10 w-[100%] h-[88vh] overflow-y-hidden  `}>
 
             <div className=' mb-[10px] h-[70px]  ' >
                 <h2 className=' text-[#0A0A0A] '>{headingText}</h2>

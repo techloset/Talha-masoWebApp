@@ -15,9 +15,9 @@ const header = () => {
 
                 {
                     navbar ? (
-                        <div className='  bg-[#F2CCBA] w-full h-screen '>
+                        <div className='  bg-[#F2CCBA] w-full h-screen  '>
 
-                            <div className=' flex justify-around items-center '>
+                            <div className=' flex justify-around items-center px-[8px] '>
                                 {/* mason logo */}
                                 <div>
                                     <Image src='/images/mason.svg' height='10' width='100' />
@@ -91,7 +91,7 @@ const header = () => {
 
                         </div>
                     ) : (
-                        <div className=' bg-blue-500  flex  items-center px-[20px] '>
+                        <div className='bg-white flex  items-center px-[20px]'>
                             {/* mason logo */}
                             <div className='   '>
                                 <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='10' width='100' className='cursor-pointer w-[70%] '/> </Link>
