@@ -20,9 +20,9 @@ const page = () => {
 
 
             <Image src='/images/aboutt2.jpg' width='100' height='100' className=' w-full ' />
-            <div className='my-[20px] border-b-[1px] border-gray-300 '> </div>
+            <div className='mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
             <Image src='/images/about1.jpg' width='100' height='100' className=' w-full mt-[10px]' />
-            <div className='my-[20px] border-b-[1px] border-gray-300 '> </div>
+            <div className='mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
 
 
             {/* text */}

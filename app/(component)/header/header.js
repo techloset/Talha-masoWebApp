@@ -20,7 +20,7 @@ const header = () => {
                             <div className=' flex justify-around items-center px-[8px] '>
                                 {/* mason logo */}
                                 <div>
-                                    <Image src='/images/mason.svg' height='10' width='100' />
+                                    <Image src='/images/mason.svg' height='100' width='100' />
                                 </div>
 
 
@@ -32,27 +32,30 @@ const header = () => {
 
                             <ul className='   px-[15px] '>
 
-                                <div className='border-t-[1.5px] border-gray '></div>
+                                <div className='border-t-[1px] border-gray '></div>
                                 <Link href='/pages/projects' onClick={() => setNavbar(!navbar)}> <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080] '>Projects</li> </Link>
 
-                                <div className='border-t-[1.5px] border-gray '></div>
+                                <div className='border-t-[1px] border-gray '></div>
 
                                 <Link href='/pages/about' onClick={() => setNavbar(!navbar)}> <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080]' > About</li> </Link>
 
-                                <div className='border-t-[1.5px] border-gray '></div>
+                                <div className='border-t-[1px] border-gray '></div>
 
-                              <Link href='/pages/culturalhub' onClick={() => setNavbar(!navbar)}>  <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080]' >Culture Hub</li> </Link>
+                                <Link href='/pages/culturalhub' onClick={() => setNavbar(!navbar)}>  <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080]' >Culture Hub</li> </Link>
 
-                                <div className='border-t-[1.5px] border-gray '></div>
+                                <div className='border-t-[1px] border-gray '></div>
 
                                 <Link href='/pages/journal' onClick={() => setNavbar(!navbar)}> <li className='text-[25.6px]  mt-[9px] mb-[7px] text-[#00000080]  ' >Journal</li> </Link>
 
-                                <div className='border-t-[1.5px] border-gray '></div>
+                                <div className='border-t-[1px] border-gray '></div>
 
+
+
+                                {/* footer */}
 
                                 <div className=' text-[12.8px] pt-[25px]    '>
 
-                                    <div className='border-t-[1.5px] border-gray  mt-[50px]  '></div>
+                                    <div className='border-t-[1px] border-gray  mt-[50px]  '></div>
 
                                     <div className='flex justify-start  mt-[20px] '>
 
@@ -70,7 +73,7 @@ const header = () => {
 
                                     </div>
 
-                                    <div className='border-t-[1.5px] border-gray mt-[10px]'></div>
+                                    <div className='border-t-[1px] border-gray mt-[10px]'></div>
 
                                     <div className='flex gap-3 mt-[10px]'>
                                         <p>工作室</p>
@@ -94,7 +97,7 @@ const header = () => {
                         <div className='bg-white flex  items-center px-[20px]'>
                             {/* mason logo */}
                             <div className='   '>
-                                <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='10' width='100' className='cursor-pointer w-[70%] '/> </Link>
+                                <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[70%] ' /> </Link>
                             </div>
 
 

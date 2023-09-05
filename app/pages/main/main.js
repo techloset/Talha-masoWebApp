@@ -88,57 +88,61 @@ const main = () => {
 
     return (
 
-        <div className={` ${kalaRang1 || kalaRang2 || kalaRang3 || kalaRang4 || kalaRang5 || kalaRang6 ? 'backgroundColorChange' : ''}   mt-[20px] px-[15px]   absolute top-10 -z-10 w-[100%] h-[88vh] overflow-y-hidden  `}>
+        <div className={` ${kalaRang1 || kalaRang2 || kalaRang3 || kalaRang4 || kalaRang5 || kalaRang6 ? 'backgroundColorChange' : ''}   mt-[20px] sm:mt-[5px] px-[15px]   absolute top-10 -z-10 w-[100%] h-[88vh] overflow-y-hidden  `}>
 
-            <div className=' mb-[10px] h-[70px]  ' >
-                <h2 className=' text-[#0A0A0A] '>{headingText}</h2>
-                <p className='text-[#505050] '>{paraText}</p>
+            <div className='sm:flex sm:justify-evenly '>
+
+            <div className=' mb-[10px] h-[70px] sm:h-auto  sm:w-[100%]  sm:my-auto' >
+                <h2 className=' text-[#0A0A0A] sm:w-[70%] '>{headingText}</h2>
+                <p className='text-[#505050] sm:w-[80%] '>{paraText}</p>
             </div>
 
-            <div className='grid grid-cols-12 gap-2 h-[140px] '>
+            <div className='  sm:w-full sm:h-[461px]'>
+                <div className='grid grid-cols-12 gap-1 h-[140px] sm:h-[224.50px] '>
 
-                <div className=' grid col-span-8 '>
-                    <Image className={` bg-[url('/images/art.jpeg')]  bg-cover bg-center bg-no-repeat   ${kalaRang1 ? '  filter grayscale-0' : 'filter grayscale'}  `}
-                        onMouseEnter={toggleHover1} onMouseLeave={onmouseLeavee} />
+                    <div className=' grid col-span-8 '>
+                        <Image className={` bg-[url('/images/art.jpeg')]  bg-cover bg-center bg-no-repeat   ${kalaRang1 ? '  filter grayscale-0' : 'filter grayscale'}  `}
+                            onMouseEnter={toggleHover1} onMouseLeave={onmouseLeavee} />
+                    </div>
+
+                    <div className=' col-span-4 grid-flow-row '>
+                        <div className={`  auction h-[70px] sm:h-[109px] bg-cover bg-center mb-[6px]     ${kalaRang2 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover2}
+                            onMouseLeave={onmouseLeavee2} >
+                        </div>
+
+                        <div className={` moon h-[70px] sm:h-[109px]  bg-cover bg-center    ${kalaRang3 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover3}
+                            onMouseLeave={onmouseLeavee3}>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div className=' col-span-4 grid-flow-row '>
-                    <div className={`  auction h-[70px] bg-cover bg-center mb-[3px]     ${kalaRang2 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover2}
-                        onMouseLeave={onmouseLeavee2} >
+                <div className='grid grid-cols-12 gap-1 h-[140px] mt-[10px]  '>
+
+
+
+                    <div className=' col-span-4 grid-flow-row '>
+
+                        <div className={`  group h-[70px] sm:h-[109px] bg-cover bg-center mb-[6px]     ${kalaRang5 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover5}
+                            onMouseLeave={onmouseLeavee5} >
+                        </div>
+                        <div className={` blackman h-[70px] sm:h-[109px]  bg-cover bg-center    ${kalaRang6 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover6}
+                            onMouseLeave={onmouseLeavee6}>
+                        </div>
+
                     </div>
 
-                    <div className={` moon h-[70px]  bg-cover bg-center    ${kalaRang3 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover3}
-                        onMouseLeave={onmouseLeavee3}>
-
+                    <div className=' grid col-span-8 sm:h-[224.50px]'>
+                        <Image className={` bg-[url('/images/tree.jpeg')]  bg-cover bg-center bg-no-repeat   ${kalaRang4 ? '  filter grayscale-0' : 'filter grayscale'}  `}
+                            onMouseEnter={toggleHover4} onMouseLeave={onmouseLeavee4} />
                     </div>
-
                 </div>
 
             </div>
 
-            <div className='grid grid-cols-12 gap-2 h-[140px] mt-[10px] '>
-
-
-
-                <div className=' col-span-4 grid-flow-row '>
-                    <div className={`  group h-[70px] bg-cover bg-center mb-[3px]     ${kalaRang5 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover5}
-                        onMouseLeave={onmouseLeavee5} >
-                    </div>
-
-                    <div className={` blackman h-[70px]  bg-cover bg-center    ${kalaRang6 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover6}
-                        onMouseLeave={onmouseLeavee6}>
-
-                    </div>
-
-                </div>
-
-                <div className=' grid col-span-8 '>
-                    <Image className={` bg-[url('/images/tree.jpeg')]  bg-cover bg-center bg-no-repeat   ${kalaRang4 ? '  filter grayscale-0' : 'filter grayscale'}  `}
-                        onMouseEnter={toggleHover4} onMouseLeave={onmouseLeavee4} />
-                </div>
-
             </div>
-
 
 
 

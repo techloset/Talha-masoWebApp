@@ -6,8 +6,8 @@ const page = () => {
   return (
     <div className='absolute -z-10 top-12 px-[20px] '>
         
-        <div className=' pt-[10px] mb-[15px] text-[25.6px]'>
-            <p className=' '>Projects</p>
+        <div className=' pt-[10px] mb-[15px]'>
+            <p className=' text-[25.6px]'>Projects</p>
         </div>
 
         {

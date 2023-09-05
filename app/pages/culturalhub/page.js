@@ -13,16 +13,16 @@ const page = () => {
             {/* paragraphs */}
             <p className='text-[12.8px] text-[#6E6E6E] my-[18px] '>Being part of a community is an essential human need.  Mason Studio's Cultural Hub is a physical and conceptual space born from an intuitive need to experiment, push the boundaries of our ideas, and provide anyone with a place of belonging.   </p >
             <p className='text-[12.8px] text-[#6E6E6E] my-[18px]'>Not only a place for our design experimentation, the community-focused hub includes a public gallery, exhibition space, a community library, a home for non-profit organizations and a learning space for educational institutions.   </p >
-            <p className='text-[12.8px] text-[#6E6E6E] my-[18px]'>Engagement with industry and community members whose visions align can be a powerful instrument for achieving shared goals and creating an exponential force for actions that challenge existing systems by exploring unrelated yet interconnected themes, subjects and people. </p>
+            <p className='text-[12.8px] text-[#6E6E6E] mt-[18px]'>Engagement with industry and community members whose visions align can be a powerful instrument for achieving shared goals and creating an exponential force for actions that challenge existing systems by exploring unrelated yet interconnected themes, subjects and people. </p>
 
 
             {/* image section */}
 
 
             <Image src='/images/cultural1.jpg' width='100' height='100' className=' w-full ' />
-            <div className='my-[20px] border-b-[1px] border-gray-300 '> </div>
+            <div className='mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
             <Image src='/images/cultural2.jpg' width='100' height='100' className=' w-full mt-[10px]' />
-            <div className='my-[20px] border-b-[1px] border-gray-300 '> </div>
+            <div className='mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
 
 
             {/* text */}
