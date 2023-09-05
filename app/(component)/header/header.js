@@ -41,7 +41,7 @@ const header = () => {
 
                                 <div className='border-t-[1.5px] border-gray '></div>
 
-                                <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080]' >Culture Hub</li>
+                              <Link href='/pages/culturalhub' onClick={() => setNavbar(!navbar)}>  <li className='text-[25.6px] mt-[9px] mb-[7px] text-[#00000080]' >Culture Hub</li> </Link>
 
                                 <div className='border-t-[1.5px] border-gray '></div>
 
