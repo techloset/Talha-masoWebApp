@@ -8,17 +8,18 @@ import Link from 'next/link'
 
 const header = () => {
 
-    const [navbar, setNavbar] = useState(true)
+    const [navbar, setNavbar] = useState(false)
     return (
         <div className='   '>
 
-            <div className='fixed w-[100%] '>
+            <div className='fixed w-[100%]  '>
 
                 {
                     navbar ? (
                         <div className='  bg-[#F2CCBA] w-full h-screen  '>
 
-                            <div className=' flex justify-around   items-center px-[20px] md:w-[10%]'>
+                            <div className=' flex justify-around   items-center px-[20px] md:w-[10%] '>
+
                                 {/* mason logo */}
                                 <div className='md:hidden '>
                                     <Link href='/' onClick={() => setNavbar(!navbar)}>  <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className=' cursor-pointer w-[70%] ' /> </Link>
@@ -31,16 +32,14 @@ const header = () => {
 
                                 </div>
 
-                                {/* <div className=' ' >
-
-                                    <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[50%] hidden md:block' />
-
-                                    
-                                </div> */}
-
                             </div>
 
-                            <ul className='   px-[15px] '>
+                            {/* list */}
+                            <ul className='   px-[15px]  md:px-[90px]  '>
+
+                                <div className='hidden md:block mt-[9px] mb-[12px]' >
+                                    <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-auto h-[30px] ' />
+                                </div>
 
                                 {/* horiozntal line */}
                                 <div className='border-t-[1px] border-white  '></div>
@@ -73,33 +72,34 @@ const header = () => {
 
                                 <div className=' text-[12.8px] pt-[25px]   sm:mt-[120px] md:mt-0'>
 
-                                    <div className='border-t-[1px] border-white  mt-[50px] sm:w-[45%] md:w-auto'></div>
+                                    <div className='border-t-[1px] border-white  mt-[50px] md:mt-[20px] sm:w-[45%] md:w-auto'></div>
 
-                                    <div className='flex justify-start md:justify-between    mt-[20px] '>
+                                    <div className='flex justify-start md:justify-between md:items-center   mt-[20px] '>
 
-                                        <div className='sm:absolute sm:right-[15px] sm:bottom-[105px] sm:w-[45%]  w-[50%] md:static md:w-full bg-orange-500  text-[#000000]'>
+                                        <div className='sm:absolute sm:right-[15px] sm:bottom-[105px] sm:w-[45%]  w-[50%] md:static md:w-full  text-[#000000]'>
                                             <p className=''>+1 (416) 761-9736 </p>
                                             <p >Follow Us </p>
                                             <p>Send us an Email </p>
                                         </div>
 
-                                        <div className='sm:w-[45%] sm:absolute sm:left-3 sm:bottom-[60px] md:static md:w-full bg-pink-500  text-[#000000]'>
+                                        <div className='sm:w-[45%] sm:absolute sm:left-3 sm:bottom-[60px] md:static md:w-full  text-[#000000]'>
                                             <p className=''>91 Pelham Avenue</p>
                                             <p >Toronto, Canada</p>
                                             <p>M6N 1A5</p>
                                         </div>
-
-                                        <div className='md:static hidden md:block bg-cyan-500 md:w-full'>
+                                       
+                                        {/* tis chinese part hidden on small devices and shown on md screen */}
+                                        <div className='md:block md:static hidden  md:w-full'>
                                             <p>工作室</p>
-                                            <p>/</p>
+                                            {/* <p>/</p> */}
                                             <p>微信</p>
-                                            <p>/</p>
+                                            {/* <p>/</p> */}
                                             <p>电子邮件</p>
                                         </div>
 
                                     </div>
 
-                                    <div className='border-t-[1px] border-white mt-[10px] sm:w-[45%] sm:absolute sm:right-[17px] md:hidden'></div>
+                                    <div className='bg-white border-t-[1px] border-white mt-[10px] sm:w-[45%] sm:absolute sm:right-[17px] md:hidden'></div>
 
                                     <div className='flex gap-3 mt-[10px] sm:absolute sm:right-[15px] sm:bottom-[60px] sm:w-[45%] md:hidden'>
                                         <p>工作室</p>
@@ -120,7 +120,7 @@ const header = () => {
 
                         </div>
                     ) : (
-                        <div className='bg-white flex  items-center px-[20px] md:w-[10%] md:bg-green-500'>
+                        <div className=' flex  items-center px-[20px] md:w-[10%] md:bg-green-500'>
                             {/* mason logo */}
                             <div className=' md:hidden  '>
                                 <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[70%] ' /> </Link>

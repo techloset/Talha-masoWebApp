@@ -92,14 +92,17 @@ const main = () => {
 
             <div className='sm:flex sm:justify-evenly  md:h-full '>
 
-                <div className=' mb-[10px] h-[70px] sm:h-auto  sm:w-[100%] md:w-[50%] md:h-[75%]  sm:my-auto bg-purple-500 md:ml-[50px] ' >
 
-                      <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[50%] hidden md:block' /> 
+                {/* text content */}
+                <div className=' mb-[10px] h-[70px] sm:h-auto  sm:w-[100%] md:w-[50%] md:mt-[40px]  sm:my-auto bg-purple-500 md:ml-[50px] ' >
 
-                    <h2 className=' text-[#0A0A0A] sm:w-[70%] md:w-[45%]  md:text-[24px]  bg-green-500 md:mt-[20px] '>{headingText}</h2>
+                    <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[50%] hidden md:block md:ml-[25px] md:mt-[7px] '   />
+
+                    <h2 className=' text-[#0A0A0A] sm:w-[70%] md:w-[185px]  md:text-[24px]  bg-green-500 md:mt-[20px] md:ml-[25px]'>{headingText}</h2>
                     <p className='text-[#505050] sm:w-[80%] '>{paraText}</p>
                 </div>
 
+                {/* iamges div */}
                 <div className='  sm:w-full sm:h-[461px] md:h-full md:w-[50%] '>
                     <div className='grid grid-cols-12 gap-1 h-[140px] sm:h-[224.50px]  '>
 

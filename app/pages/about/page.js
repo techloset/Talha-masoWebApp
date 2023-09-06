@@ -4,44 +4,67 @@ import Footer from '@/app/(component)/footer/footer'
 
 const page = () => {
     return (
-        <div className=' absolute  -z-10 top-12 px-[20px] pb-[45px] '>
-            <p className='text-[25.6px] py-[15px]'>About</p>
-            <p className='text-[22.85px]  '>We have an optimistic view of humanity, and we believe in the potency of using design as a tool for actionable change.</p>
-            <p className='text-[12.8px] text-[#6E6E6E] my-[18px] '>At Mason Studio, we design thoughtfully and care deeply, guided by our innate need to “make better”.  This is not just to affect the world but to understand both the opportunities we have and the possibilities we can create to bring real value to society, an experience or a personal moment in a meaningful way. </p >
-            <p className='text-[12.8px] text-[#6E6E6E] my-[18px]'>Our team is diverse academically, culturally and personally - and we bring our whole selves to each of our projects to express the richness of humanity and enhance the value of the design experience.  While all our designers are trained in interior design, we have expertise in architecture, furniture design, human sciences, art consultancy,  art history, fine arts, textile design, graphic design, business, finance and economics.  </p >
-            <p className='text-[12.8px] text-[#6E6E6E] my-[18px]'>We have had the pleasure of partnering with worldwide clients to co-create unconventional and successful solutions.  </p>
+        <div className=' absolute  -z-10 top-12 px-[20px] pb-[45px] bg-green-500 md:top-0 md:p-[90px] '>
 
-            <p className='text-[12.8px] text-[#6E6E6E] my-[18px]'>Select clients include:</p>
-            <p className='text-[12.8px] text-[#6E6E6E] my-[18px]'>
-                Oxford Properties<br />Gairloch<br />RioCan<br />Hazelview Properties<br />Great Gulf<br />Lifetime Developments<br />TAS<br />Daniels Corporation<br />Slate Asset Management<br />Marlin Spring  <br />
-                China Resources<br />Equinox<br />Alo Food Group<br />Hyatt Hotels<br />Kimpton Hotels<br />Viceroy Hospitality Group<br />Kemmons Wilson<br />Innvest Hotels<br />Valor Hospitality Partners
-            </p>
-            {/* image section */}
+            <p className='text-[25.6px] md:text-[44px] h-[82.79px] bg-blue-500 md:px-[15px]'>About</p>
+            <div className='md:grid md:grid-cols-2   bg-orange-500'>
+
+                <div className='md:grid md:col-span-1 md:px-[15px]  md:font-[300]'>
+                    <p className='text-[22.85px] md:w-[95%] '>We have an optimistic view of humanity, and we believe in the potency of using design as a tool for actionable change.</p>
+                    <p className='text-[12.8px] md:text-[15px] text-[#6E6E6E] my-[18px] md:my-[21px]'>At Mason Studio, we design thoughtfully and care deeply, guided by our innate need to “make better”.  This is not just to affect the world but to understand both the opportunities we have and the possibilities we can create to bring real value to society, an experience or a personal moment in a meaningful way. </p >
+                    <p className='text-[12.8px] md:text-[15px]  text-[#6E6E6E] my-[18px] md:my-0 md:mb-[21px]'>Our team is diverse academically, culturally and personally - and we bring our whole selves to each of our projects to express the richness of humanity and enhance the value of the design experience.  While all our designers are trained in interior design, we have expertise in architecture, furniture design, human sciences, art consultancy,  art history, fine arts, textile design, graphic design, business, finance and economics.  </p >
+                    <p className='text-[12.8px] md:text-[15px]  text-[#6E6E6E] my-[18px] md:my-0 md:mb-[21px]'>We have had the pleasure of partnering with worldwide clients to co-create unconventional and successful solutions.  </p>
+
+                    <p className='text-[12.8px] md:text-[15px]  text-[#6E6E6E] my-[18px] md:my-0 md:mb-[21px]'>Select clients include:</p>
+                    <p className='text-[12.8px] md:text-[15px]  text-[#6E6E6E] my-[18px]'>
+                        Oxford Properties<br />Gairloch<br />RioCan<br />Hazelview Properties<br />Great Gulf<br />Lifetime Developments<br />TAS<br />Daniels Corporation<br />Slate Asset Management<br />Marlin Spring  <br />
+                        China Resources<br />Equinox<br />Alo Food Group<br />Hyatt Hotels<br />Kimpton Hotels<br />Viceroy Hospitality Group<br />Kemmons Wilson<br />Innvest Hotels<br />Valor Hospitality Partners
+                    </p>
+                    <div className='mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
+                </div>
+
+                {/* image section */}
+
+                <div className='md:grid md:col-span-1 md:mt-[40px] md:px-[15px]'>
+                    <Image src='/images/aboutt2.jpg' width='100' height='100' className=' w-full ' />
+                    <div className='mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
+                </div>
+
+            </div>
 
 
-            <Image src='/images/aboutt2.jpg' width='100' height='100' className=' w-full ' />
-            <div className='mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
-            <Image src='/images/about1.jpg' width='100' height='100' className=' w-full mt-[10px]' />
-            <div className='mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
+            <div className='md:hidden mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
+
+            <div className='md:grid md:grid-cols-2   bg-pink-500'>
+                <div className=''>
+                    <Image src='/images/about1.jpg' width='100' height='100' className=' w-full mt-[10px]' />
+                </div>
+
+                <div className='md:hidden mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
 
 
-            {/* text */}
-            <p className='text-[12px] text-[#6E6E6E]'> Co-Founder, Executive Director</p>
-            <p className='text-[18px] '>Ashley Rumsey</p>
-            <p className='text-[12px] text-[#6E6E6E]'>BID Hons, NCIDQ, IDC, ARIDO, LEED AP</p>
-            <p className='text-[12px] text-[#6E6E6E] pt-[12px] pb-[18px] '>Ashley Rumsey brings the highest standards to both the design vision of projects and the management of the Mason Studio team. An advocate of purposeful design, Ashley has been a key part of the development of Mason Studio’s innovative research-based process. She ensures design decisions are thoughtfully evaluated based on their potential contribution to the end user, design process, and client’s goals. Her collaborative approach ensures a broad-based perspective, leveraging the skills and knowledge of the entire team to fully inform each design project.
-                As a respected leader in the Canadian design community, Ashley has also been featured in international design media and regularly participates in thought leadership at notable conferences and events.</p>
+                {/* text */}
+                <div className='md:grid md:col-span-1 md:px-[15px]  md:font-[300]'>
+
+                    <p className='text-[12px] md:text-[15px] text-[#6E6E6E]'> Co-Founder, Executive Director</p>
+                    <p className='text-[18px] md:text-[26px] '>Ashley Rumsey</p>
+                    <p className='text-[12px] md:text-[14px] text-[#6E6E6E]'>BID Hons, NCIDQ, IDC, ARIDO, LEED AP</p>
+                    <p className='text-[12px] md:text-[15px] text-[#6E6E6E] pt-[12px] pb-[18px] '>Ashley Rumsey brings the highest standards to both the design vision of projects and the management of the Mason Studio team. An advocate of purposeful design, Ashley has been a key part of the development of Mason Studio’s innovative research-based process. She ensures design decisions are thoughtfully evaluated based on their potential contribution to the end user, design process, and client’s goals. Her collaborative approach ensures a broad-based perspective, leveraging the skills and knowledge of the entire team to fully inform each design project.
+                        As a respected leader in the Canadian design community, Ashley has also been featured in international design media and regularly participates in thought leadership at notable conferences and events.</p>
 
 
-            <p className='text-[12px] text-[#6E6E6E]'> Co-Founder, Creative Director</p>
-            <p className='text-[18px] '>Stanley Sun</p>
-            <p className='text-[12px] text-[#6E6E6E]' >BID Hons, BSC Hons, NCIDQ, IDC, ARIDO, BCIN</p>
-            <p className='pt-[12px] text-[12.8px] text-[#6E6E6E] '>Stanley Sun’s vision is informed by a unique blend of formal studies in human sciences, fine arts and interior design.  Approaching each challenge with a combined scientific and humanistic perspective, he first observes how people experience and react to the built environment to create a rational and intuitive design solution. Of particular interest to Stanley’s practice is the science of light and the physiological and psychological response people have to light.As an advocate for Canadian design, Stanley has been published widely and has participated as a keynote speaker at leading design conferences. He is also a sessional instructor at his alma mater, Toronto Metropolitan University.</p>
+                    <p className='text-[12px] md:text-[15px] text-[#6E6E6E]'> Co-Founder, Creative Director</p>
+                    <p className='text-[18px] md:text-[26px] '>Stanley Sun</p>
+                    <p className='text-[12px] md:text-[14px] text-[#6E6E6E]' >BID Hons, BSC Hons, NCIDQ, IDC, ARIDO, BCIN</p>
+                    <p className='pt-[12px] text-[12.8px] md:text-[15px] text-[#6E6E6E] '>Stanley Sun’s vision is informed by a unique blend of formal studies in human sciences, fine arts and interior design.  Approaching each challenge with a combined scientific and humanistic perspective, he first observes how people experience and react to the built environment to create a rational and intuitive design solution. Of particular interest to Stanley’s practice is the science of light and the physiological and psychological response people have to light.As an advocate for Canadian design, Stanley has been published widely and has participated as a keynote speaker at leading design conferences. He is also a sessional instructor at his alma mater, Toronto Metropolitan University.</p>
+
+                </div>
+            </div>
 
             <div className='mt-[30px] mb-[20px]  border-b-[1px] border-gray-300 '> </div>
-           
-           
-           
+
+
+
             {/* Awards links */}
             <p className='text-[18px] pb-[15px] '>Awards</p>
             <ul >
@@ -147,11 +170,11 @@ const page = () => {
             </ul>
 
             <div className='my-[20px] border-b-[1px] border-gray-300 '> </div>
-           
-           
+
+
             {/* Press heading */}
             <p className='text-[18px] pb-[15px] '>Press</p>
-           
+
             <ul>
                 <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Office Snapshots /</span> Mason Studio Integrated Workspace</li>
                 <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Trend Hunter /</span> Mason Studio Redesigned Its Toronto Office For "The Greater Good"</li>
@@ -189,7 +212,7 @@ const page = () => {
 
             <div className='mt-[20px] border-b-[1px] border-gray-300 '> </div>
 
-            <Footer/>
+            <Footer />
         </div>
     )
 }
