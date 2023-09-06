@@ -120,14 +120,14 @@ const header = () => {
 
                         </div>
                     ) : (
-                        <div className=' flex  items-center px-[20px] md:w-[10%] md:bg-green-500'>
+                        <div className='bg-white flex  items-center px-[20px] md:w-[10%] '>
                             {/* mason logo */}
                             <div className=' md:hidden  '>
                                 <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[70%] ' /> </Link>
                             </div>
 
 
-                            <div className=' w-[100%] flex justify-end mt-[10px] md:w-auto   bg-yellow-500'  >
+                            <div className=' w-[100%] flex justify-end mt-[10px] md:w-auto   '  >
                                 <Image onClick={() => setNavbar(!navbar)} src='/images/menu.png' width='100' height='100' className='w-[40px] h-[40px] cursor-pointer  ' />
 
                             </div>

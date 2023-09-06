@@ -4,7 +4,7 @@ export const data = [
         imageuurl: '/images/Jasset1.jpeg',
         heading: 'Work From (CPH) The World: Tannaz Torabi',
         para1: 'Mason Studio | Work From The World with Tannaz Torabi, Project Designer',
-        Location: 'Copenhagen, Denmark ',
+        Location: 'Location: Copenhagen, Denmark ',
 
         para2: '“I sense a notable transformation in my thinking patterns as I strive to cultivate a distinct vision and streamline my thoughts, by removing unnecessary items and focusing on the core whys and hows." ',
         para3: 'Those are some of many insights Mason Studio Project Designer, Tannaz Torabi, channeled during her first-time visit to Copenhagen, Denmark for Mason Studio’s Work From The World program. The initiative provides Mason Studio team members the opportunity to be sent anywhere they choose in the world to work for a week, returning to bring knowledge and inspiration to all client projects and amongst their colleagues. ',

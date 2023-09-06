@@ -14,8 +14,9 @@ module.exports = {
       screens: {
         'sm': '517px',
         // => @media (min-width: 640px) { ... }
-  
         'md': '767px',
+        // => @media (min-width: 1024px) { ... }  
+        'lg': '1023px',
         // => @media (min-width: 1024px) { ... }  
       },
       fontFamily: { 
