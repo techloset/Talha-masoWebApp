@@ -120,7 +120,7 @@ const header = () => {
 
                         </div>
                     ) : (
-                        <div className=' flex  items-center px-[20px] md:w-[80px] md:px-[20px] bg-orange-500'>
+                        <div className=' flex  items-center px-[20px] md:w-[80px] md:px-[20px] '>
                             {/* mason logo */}
                             <div className=' md:hidden  '>
                                 <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[70%] ' /> </Link>
