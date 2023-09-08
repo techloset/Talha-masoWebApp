@@ -43,8 +43,8 @@ const Page = () => {
                 <div className='hidden lg:block lg:relative lg:top-[1180px] lg:border-b-[1px] lg:border-gray-300 '> </div>
                 <div className='hidden lg:block lg:relative lg:top-[1180px] lg:border-b-[1px] lg:border-gray-300 '> </div>
                 {
-                    data.map((item) => (
-                        <div className=''>
+                    data.map((item,index) => (
+                        <div key={index} className=''>
                             <div className=" md:w-[100%] ">
                                 <img src={item.imageuurl} className=' mx-auto mt-[10px]  ' />
                             </div>
