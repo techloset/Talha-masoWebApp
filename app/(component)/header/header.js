@@ -16,7 +16,7 @@ const header = () => {
 
                 {
                     navbar ? (
-                        <div className='  bg-[#F2CCBA] w-full h-screen  '>
+                        <div className='  bg-[#F2CCBA] w-full h-screen md:pb-[30px]  '>
 
                             <div className=' flex justify-around   items-center px-[20px] md:w-[10%] '>
 
@@ -38,7 +38,7 @@ const header = () => {
                             <ul className='   px-[15px]  md:px-[90px]  '>
 
                                 <div className='hidden md:block mt-[9px] mb-[12px]' >
-                                    <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-auto h-[30px] ' />
+                                <Link href='/' onClick={() => setNavbar(!navbar)}>    <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-auto h-[30px] ' /> </Link>
                                 </div>
 
                                 {/* horiozntal line */}
@@ -70,9 +70,9 @@ const header = () => {
 
                                 {/* footer */}
 
-                                <div className=' text-[12.8px] pt-[25px]   sm:mt-[120px] md:mt-0'>
+                                <div className=' text-[12.8px] pt-[23px] bg-orange-500   sm:mt-[120px] sm:pt-0 md:mt-0  '>
 
-                                    <div className='border-t-[1px] border-white  mt-[50px] md:mt-[20px] sm:w-[45%] md:w-auto'></div>
+                                    <div className='border-t-[1px] border-white  mt-[50px] md:pt-[2%] sm:w-[45%] md:w-auto'></div>
 
                                     <div className='flex justify-start md:justify-between md:items-center   mt-[20px] '>
 
@@ -99,7 +99,7 @@ const header = () => {
 
                                     </div>
 
-                                    <div className='bg-white border-t-[1px] border-white mt-[10px] sm:w-[45%] sm:absolute sm:right-[17px] md:hidden'></div>
+                                    <div className='bg-white border-t-[1px]  mt-[10px] sm:w-[45%] sm:absolute sm:right-[17px] md:hidden'></div>
 
                                     <div className='flex gap-3 mt-[10px] sm:absolute sm:right-[15px] sm:bottom-[60px] sm:w-[45%] md:hidden'>
                                         <p>工作室</p>

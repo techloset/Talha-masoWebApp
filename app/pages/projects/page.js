@@ -205,7 +205,7 @@ const page = () => {
         </div>
       </div>
 
-      <div className="md:imgParent md:col-span-4 md:p-[7.5px]">
+      <div className="md:imgParent md:col-span-4 md:p-[7.5px] ">
         <div className="md:imgSection">
           {projects.map((project, index) => (
 

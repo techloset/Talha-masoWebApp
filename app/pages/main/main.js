@@ -13,8 +13,8 @@ const main = () => {
     const [kalaRang4, setKalaRang4] = useState(false)
     const [kalaRang5, setKalaRang5] = useState(false)
     const [kalaRang6, setKalaRang6] = useState(false)
-    const [headingText, setHeadingText] = useState('Design is our tool to create inspiring experiences that empower people and communities.');
-    const [paraText, setparaText] = useState('');
+    const [headingText, setHeadingText] = useState('');
+    const [paraText, setparaText] = useState('Design is our tool to create inspiring experiences that empower people and communities.');
 
 
     const toggleHover1 = () => {
@@ -88,35 +88,39 @@ const main = () => {
 
     return (
 
-        <div className={` ${kalaRang1 || kalaRang2 || kalaRang3 || kalaRang4 || kalaRang5 || kalaRang6 ? 'backgroundColorChange' : ''}   mt-[20px] sm:mt-[5px] px-[15px]   absolute top-10 -z-10 w-[100%] h-[88vh] md:top-0 md:p-[7.5px]  md:h-[98vh] overflow-y-hidden  `}>
+        <div className={` ${kalaRang1 || kalaRang2 || kalaRang3 || kalaRang4 || kalaRang5 || kalaRang6 ? 'backgroundColorChange' : ''}   mt-[10px] md:mt-[5px] px-[15px]   absolute top-10 -z-10 w-[100%] h-[88vh] md:top-0 md:p-[7.5px]  md:h-[98vh] overflow-y-hidden  `}>
 
-            <div className='sm:flex sm:justify-evenly  md:h-full '>
+            <div className='md:flex md:justify-evenly h-full md:h-full '>
 
 
                 {/* text content */}
-                <div className=' mb-[10px] h-[70px] sm:h-auto  sm:w-[100%] md:w-[50%] md:mt-[40px]  sm:my-auto bg-purple-500 md:ml-[50px] ' >
+                <div className=' mb-[10px] h-[70px] md:h-[30%] md:m-auto   md:w-[80%]  bg-orange-500    md:ml-[50px] ' >
 
-                    <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[50%] hidden md:block md:ml-[25px] md:mt-[7px] '   />
+                    <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[50%] hidden md:block md:ml-[25px] md:mt-[7px] ' />
 
-                    <h2 className=' text-[#0A0A0A] sm:w-[70%] md:w-[185px]  md:text-[24px]  bg-green-500 md:mt-[20px] md:ml-[25px]'>{headingText}</h2>
-                    <p className='text-[#505050] sm:w-[80%] '>{paraText}</p>
+                    <div className='md:m-auto pt-[5px] '>
+                    <h2 className=' text-[#0A0A0A]    md:text-[24px] md:mt-[10px]   md:ml-[25px]'>{headingText}</h2>
+                    <p className='text-[#505050] md:text-[20px]  md:my-auto md:mt-[5px] md:ml-[25px] md:w-[80%]'>{paraText}</p>
+                    </div>
                 </div>
 
-                {/* iamges div */}
-                <div className='  sm:w-full sm:h-[461px] md:h-full md:w-[50%] '>
-                    <div className='grid grid-cols-12 gap-1 h-[140px] sm:h-[224.50px]  '>
+                {/* images div */}
+                <div className=' h-full   md:w-[80%] md:h-full  '>
+                    <div className='grid grid-cols-12 gap-1 h-[40%]  md:h-[50%]  '>
 
-                        <div className=' grid col-span-8 '>
-                            <Image className={` bg-[url('/images/art.jpeg')]  bg-cover bg-center bg-no-repeat   ${kalaRang1 ? '  filter grayscale-0' : 'filter grayscale'}  `}
-                                onMouseEnter={toggleHover1} onMouseLeave={onmouseLeavee} />
+                        <div className=' grid col-span-8  '>
+                            <div className={` art bg-cover bg-center   ${kalaRang1 ? '  filter grayscale-0' : 'filter grayscale'}  `}
+                                onMouseEnter={toggleHover1} onMouseLeave={onmouseLeavee} >
+
+                            </div>
                         </div>
 
-                        <div className=' col-span-4 grid-flow-row '>
-                            <div className={`  auction h-[70px] sm:h-[109px] bg-cover bg-center mb-[6px]     ${kalaRang2 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover2}
+                        <div className=' col-span-4 grid-flow-row  '>
+                            <div className={`  auction h-[48%] md:h-[50%] bg-cover bg-center mb-[5px] sm:mb-[6px]    ${kalaRang2 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover2}
                                 onMouseLeave={onmouseLeavee2} >
                             </div>
 
-                            <div className={` moon h-[70px] sm:h-[109px]  bg-cover bg-center    ${kalaRang3 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover3}
+                            <div className={` moon h-[50%] md:h-[50%]  bg-cover bg-center    ${kalaRang3 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover3}
                                 onMouseLeave={onmouseLeavee3}>
 
                             </div>
@@ -125,24 +129,24 @@ const main = () => {
 
                     </div>
 
-                    <div className='grid grid-cols-12 gap-1 h-[140px] mt-[10px]  '>
+                    <div className='grid grid-cols-12 gap-1 h-[40%]  mt-[10px] md:h-[50%]  '>
 
 
 
                         <div className=' col-span-4 grid-flow-row '>
 
-                            <div className={`  group h-[70px] sm:h-[109px] bg-cover bg-center mb-[6px]     ${kalaRang5 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover5}
+                            <div className={`  group h-[48%] md:h-[50%] bg-cover bg-center mb-[5px] sm:mb-[6px]     ${kalaRang5 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover5}
                                 onMouseLeave={onmouseLeavee5} >
                             </div>
-                            <div className={` blackman h-[70px] sm:h-[109px]  bg-cover bg-center    ${kalaRang6 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover6}
+                            <div className={` blackman h-[50%] md:h-[50%]  bg-cover bg-center    ${kalaRang6 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover6}
                                 onMouseLeave={onmouseLeavee6}>
                             </div>
 
                         </div>
 
-                        <div className=' grid col-span-8 sm:h-[224.50px]'>
-                            <Image className={` bg-[url('/images/tree.jpeg')]  bg-cover bg-center bg-no-repeat   ${kalaRang4 ? '  filter grayscale-0' : 'filter grayscale'}  `}
-                                onMouseEnter={toggleHover4} onMouseLeave={onmouseLeavee4} />
+                        <div className=' grid col-span-8 '>
+                            <div className={` tree  bg-cover bg-center    ${kalaRang4 ? '  filter grayscale-0' : 'filter grayscale'}  `}
+                                onMouseEnter={toggleHover4} onMouseLeave={onmouseLeavee4} > </div>
                         </div>
                     </div>
 
