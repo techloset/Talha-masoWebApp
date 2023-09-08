@@ -14,11 +14,11 @@ const page = () => {
 
                 <div className='md:grid md:col-span-1 md:px-[15px]  md:font-[300]'>
                     <p className='text-[22.85px] md:w-[95%] '>We have an optimistic view of humanity, and we believe in the potency of using design as a tool for actionable change.</p>
-                    <p className='text-[12.8px] md:text-[15px] text-[#6E6E6E] my-[18px] md:my-[21px]'>At Mason Studio, we design thoughtfully and care deeply, guided by our innate need to “make better”.  This is not just to affect the world but to understand both the opportunities we have and the possibilities we can create to bring real value to society, an experience or a personal moment in a meaningful way. </p >
-                    <p className='text-[12.8px] md:text-[15px]  text-[#6E6E6E] my-[18px] md:my-0 md:mb-[21px]'>Our team is diverse academically, culturally and personally - and we bring our whole selves to each of our projects to express the richness of humanity and enhance the value of the design experience.  While all our designers are trained in interior design, we have expertise in architecture, furniture design, human sciences, art consultancy,  art history, fine arts, textile design, graphic design, business, finance and economics.  </p >
+                    <p className='text-[12.8px] md:text-[15px] text-[#6E6E6E] my-[18px] md:my-[21px]'>At Mason Studio, we design thoughtfully and care deeply, guided by our innate need to make better.  This is not just to affect the world but to understand both the opportunities we have and the possibilities we can create to bring real value to society, an experience or a personal moment in a meaningful way. </p >
+                    <p className='text-[12.8px] md:text-[15px]  text-[#6E6E6E] my-[18px] md:my-0 md:mb-[21px]'>Our team is diverse academically, culturally and personally and we bring our whole selves to each of our projects to express the richness of humanity and enhance the value of the design experience.  While all our designers are trained in interior design, we have expertise in architecture, furniture design, human sciences, art consultancy,  art history, fine arts, textile design, graphic design, business, finance and economics.  </p >
                     <p className='text-[12.8px] md:text-[15px]  text-[#6E6E6E] my-[18px] md:my-0 md:mb-[21px]'>We have had the pleasure of partnering with worldwide clients to co-create unconventional and successful solutions.  </p>
 
-                    <p className='text-[12.8px] md:text-[15px]  text-[#6E6E6E] my-[18px] md:my-0 md:mb-[21px]'>Select clients include:</p>
+                    <p className='text-[12.8px] md:text-[15px]  text-[#6E6E6E] my-[18px] md:my-0 md:mb-[21px]'>Select clients include </p>
                     <p className='text-[12.8px] md:text-[15px]  text-[#6E6E6E] my-[18px]'>
                         Oxford Properties<br />Gairloch<br />RioCan<br />Hazelview Properties<br />Great Gulf<br />Lifetime Developments<br />TAS<br />Daniels Corporation<br />Slate Asset Management<br />Marlin Spring  <br />
                         China Resources<br />Equinox<br />Alo Food Group<br />Hyatt Hotels<br />Kimpton Hotels<br />Viceroy Hospitality Group<br />Kemmons Wilson<br />Innvest Hotels<br />Valor Hospitality Partners
@@ -53,14 +53,14 @@ const page = () => {
                     <p className='text-[12px] md:text-[15px] text-[#6E6E6E]'> Co-Founder, Executive Director</p>
                     <p className='text-[18px] md:text-[26px] '>Ashley Rumsey</p>
                     <p className='text-[12px] md:text-[14px] text-[#6E6E6E]'>BID Hons, NCIDQ, IDC, ARIDO, LEED AP</p>
-                    <p className='text-[12px] md:text-[15px] text-[#6E6E6E] pt-[12px] pb-[18px] '>Ashley Rumsey brings the highest standards to both the design vision of projects and the management of the Mason Studio team. An advocate of purposeful design, Ashley has been a key part of the development of Mason Studio’s innovative research-based process. She ensures design decisions are thoughtfully evaluated based on their potential contribution to the end user, design process, and client’s goals. Her collaborative approach ensures a broad-based perspective, leveraging the skills and knowledge of the entire team to fully inform each design project.
+                    <p className='text-[12px] md:text-[15px] text-[#6E6E6E] pt-[12px] pb-[18px] '>Ashley Rumsey brings the highest standards to both the design vision of projects and the management of the Mason Studio team. An advocate of purposeful design, Ashley has been a key part of the development of Mason Studio s innovative research-based process. She ensures design decisions are thoughtfully evaluated based on their potential contribution to the end user, design process, and clients goals. Her collaborative approach ensures a broad-based perspective, leveraging the skills and knowledge of the entire team to fully inform each design project.
                         As a respected leader in the Canadian design community, Ashley has also been featured in international design media and regularly participates in thought leadership at notable conferences and events.</p>
 
 
                     <p className='text-[12px] md:text-[15px] text-[#6E6E6E]'> Co-Founder, Creative Director</p>
                     <p className='text-[18px] md:text-[26px] '>Stanley Sun</p>
                     <p className='text-[12px] md:text-[14px] text-[#6E6E6E]' >BID Hons, BSC Hons, NCIDQ, IDC, ARIDO, BCIN</p>
-                    <p className='pt-[12px] text-[12.8px] md:text-[15px] text-[#6E6E6E] '>Stanley Sun’s vision is informed by a unique blend of formal studies in human sciences, fine arts and interior design.  Approaching each challenge with a combined scientific and humanistic perspective, he first observes how people experience and react to the built environment to create a rational and intuitive design solution. Of particular interest to Stanley’s practice is the science of light and the physiological and psychological response people have to light.As an advocate for Canadian design, Stanley has been published widely and has participated as a keynote speaker at leading design conferences. He is also a sessional instructor at his alma mater, Toronto Metropolitan University.</p>
+                    <p className='pt-[12px] text-[12.8px] md:text-[15px] text-[#6E6E6E] '>Stanley Suns vision is informed by a unique blend of formal studies in human sciences, fine arts and interior design.  Approaching each challenge with a combined scientific and humanistic perspective, he first observes how people experience and react to the built environment to create a rational and intuitive design solution. Of particular interest to Stanleys practice is the science of light and the physiological and psychological response people have to light.As an advocate for Canadian design, Stanley has been published widely and has participated as a keynote speaker at leading design conferences. He is also a sessional instructor at his alma mater, Toronto Metropolitan University.</p>
 
                     <div className='hidden md:block mt-[30px] mb-[20px]  border-b-[1px] border-gray-300 '> </div>
                 </div>
@@ -189,13 +189,13 @@ const page = () => {
 
                     <ul>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Office Snapshots /</span> Mason Studio Integrated Workspace</li>
-                        <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Trend Hunter /</span> Mason Studio Redesigned Its Toronto Office For "The Greater Good"</li>
-                        <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - BluPrint Magazine /</span> Work and Inspiration: Mason Studio’s Office as an ideal Workspace</li>
+                        <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Trend Hunter /</span> Mason Studio Redesigned Its Toronto Office For The Greater Good </li>
+                        <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - BluPrint Magazine /</span> Work and Inspiration Mason Studio s Office as an ideal Workspace</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - FRAME Magazine /</span> Can workplaces foster social wellbeing beyond their own employees?</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Canadian Interiors /</span> Creating Engagement - May/June 2023 cover feature</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - The Toronto Star /</span> Making Contact across Toronto with award-winning photography</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Hotelier Magazine /</span> Hotel bathrooms become a focal point for designers</li>
-                        <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Dezeen /</span> Mason Studio reimagines its Toronto workspace "for the greater good"</li>
+                        <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - Dezeen /</span> Mason Studio reimagines its Toronto workspace for the greater good</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2023 - NUVO Magazine /</span> Design Space: Lady Bird Bar by Mason Studio</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2022 - Interior Design /</span> 10 Questions with Ashley Rumsey and Stanley Sun</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2022 - Azure /</span> Communal Condo Kitchen</li>
@@ -203,8 +203,8 @@ const page = () => {
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2022 - Interior Design /</span> Kimpton Banneker Hotel in Washington, D.C.</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2022 - Wallpaper /</span> Mason Studio put the focus on local artists in the new Kimpton Banneker hotel in Washington, DC</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2022 - Azure /</span> 8 Inspiring Design Events To Check Out At DesignTO 2022</li>
-                        <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - Forbes /</span> LadyBird Washington DC's most stylish rooftop bar</li>
-                        <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - Interior Design China /</span> Mason Studio's New Work - Runxi Residences</li>
+                        <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - Forbes /</span> LadyBird Washington DCs most stylish rooftop bar</li>
+                        <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - Interior Design China /</span> Mason Studios New Work - Runxi Residences</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - Interior Design /</span> Big Ideas - Mobile Retail</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - House & Home /</span> Tommy Smythe - Latest Designers To Turn His Head</li>
                         <li className='text-[12px] text-[#6E6E6E]'><span className='text-[#000000]'>2021 - Design Milk /</span> Friday Five</li>

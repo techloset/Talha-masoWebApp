@@ -5,7 +5,7 @@ import { data } from './data'
 var lineColor;
 
 
-const page = () => {
+const Page = () => {
 
 
   let [imageScroll, setImageScroll] = useState(false);
@@ -523,8 +523,8 @@ const page = () => {
         </div>
 
         {
-          data.map((item) => (
-            <div className='pb-[20px]'>
+          data.map((item,index) => (
+            <div key={index} className='pb-[20px]'>
               <img src={item.imageuurl} alt="" className='pb-[10px] ' />
               <p className='text-[12px] text-[#6E6E6E] '> {item.heading} </p>
             </div>
@@ -569,7 +569,7 @@ const page = () => {
           <div className="md:imgSection">
             {projects.map((project, index) => (
 
-              <div id={`${index}`} className={` ${imageScroll ? 'relative w-[50%] h-[100px]' : 'opacity-100 w-[auto] h-[auto] mb-[10px] relative scroll-smooth'} ${hoveredIndex === index ? 'opacity-100' : 'opacity-30'
+              <div key={index} id={`${index}`} className={` ${imageScroll ? 'relative w-[50%] h-[100px]' : 'opacity-100 w-[auto] h-[auto] mb-[10px] relative scroll-smooth'} ${hoveredIndex === index ? 'opacity-100' : 'opacity-30'
                 }`}>
                 <img
                   key={index}
@@ -591,4 +591,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -6,7 +6,7 @@ import Link from 'next/link'
 import './MyComponent.css'
 
 
-const main = () => {
+const   Main = () => {
 
     const [kalaRang1, setKalaRang1] = useState(false)
     const [kalaRang2, setKalaRang2] = useState(false)
@@ -163,4 +163,4 @@ const main = () => {
     )
 }
 
-export default main
+export default Main
