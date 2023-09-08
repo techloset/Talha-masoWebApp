@@ -9,7 +9,7 @@ import Footer from "@/app/(component)/footer/footer";
 
 
 
-const page = () => {
+const Page = () => {
 
     // const [isExpanded, setIsExpanded] = useState(false);
 
@@ -134,4 +134,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

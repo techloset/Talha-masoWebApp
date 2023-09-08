@@ -8,9 +8,10 @@ import Link from 'next/link'
 // import footer from '../footer/footer'
 
 
-const header = () => {
+const Header = () => {
 
     const [navbar, setNavbar] = useState(false)
+
     return (
         <div className='   '>
 
@@ -111,4 +112,4 @@ const header = () => {
     )
 }
 
-export default header
+export default Header
