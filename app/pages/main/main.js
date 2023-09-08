@@ -95,7 +95,7 @@ const main = () => {
 
 
                 {/* text content */}
-                <div className=' mb-[10px] h-[70px] md:h-[30%] md:m-auto   md:w-[80%]  bg-orange-500    md:ml-[50px] ' >
+                <div className=' mb-[10px] h-[70px] md:h-[30%] md:m-auto   md:w-[80%]      md:ml-[50px] ' >
 
                     <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[50%] hidden md:block md:ml-[25px] md:mt-[7px] ' />
 

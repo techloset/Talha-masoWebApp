@@ -2,13 +2,15 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image'
+import Footer from '../footer/footer'
 
 import Link from 'next/link'
+// import footer from '../footer/footer'
 
 
 const header = () => {
 
-    const [navbar, setNavbar] = useState(true)
+    const [navbar, setNavbar] = useState(false)
     return (
         <div className='   '>
 
@@ -27,7 +29,7 @@ const header = () => {
 
 
 
-                                <div className=' w-[100%] flex justify-end mt-[10px]  p-[10px]' >
+                                <div className=' w-[100%] flex justify-end mt-[10px] md:block  p-[10px] ' >
                                     <Image onClick={() => setNavbar(!navbar)} src='/images/cross.svg' width='100' height='100' className='  w-[20px] h-[20px] cursor-pointer  ' />
 
                                 </div>
@@ -35,9 +37,10 @@ const header = () => {
                             </div>
 
                             {/* list */}
-                            <ul className='   px-[15px]  md:px-[90px]  '>
+                            <ul className='  h-full  px-[15px]  md:px-[90px]  '>
 
-                                <div className='hidden md:block mt-[9px] mb-[12px]' >
+                               <div className=' h-[60%]'>
+                               <div className='hidden md:block mt-[9px] mb-[12px]' >
                                 <Link href='/' onClick={() => setNavbar(!navbar)}>    <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-auto h-[30px] ' /> </Link>
                                 </div>
 
@@ -65,51 +68,16 @@ const header = () => {
 
                                 {/* horizontal line */}
                                 <div className='border-t-[1px] border-white '></div>
+                               </div>
 
 
 
                                 {/* footer */}
 
-                                <div className=' text-[12.8px] pt-[23px]    sm:mt-[120px] sm:pt-0 md:mt-0  '>
-
-                                    <div className='border-t-[1px] border-white  mt-[50px] md:pt-[2%] sm:w-[45%] md:w-auto lg:mt-[60px] '></div>
-
-                                    <div className='flex justify-start md:justify-between md:items-center   mt-[20px] '>
-
-                                        <div className='sm:absolute sm:right-[15px] sm:bottom-[105px] sm:w-[45%]  w-[50%] md:static md:w-full  text-[#000000]'>
-                                            <p className=''>+1 (416) 761-9736 </p>
-                                            <p >Follow Us </p>
-                                            <p>Send us an Email </p>
-                                        </div>
-
-                                        <div className='sm:w-[45%] sm:absolute sm:left-3 sm:bottom-[60px] md:static md:w-full  text-[#000000]'>
-                                            <p className=''>91 Pelham Avenue</p>
-                                            <p >Toronto, Canada</p>
-                                            <p>M6N 1A5</p>
-                                        </div>
-                                       
-                                        {/* tis chinese part hidden on small devices and shown on md screen */}
-                                        <div className='md:block md:static hidden  md:w-full'>
-                                            <p>工作室</p>
-                                            {/* <p>/</p> */}
-                                            <p>微信</p>
-                                            {/* <p>/</p> */}
-                                            <p>电子邮件</p>
-                                        </div>
-
-                                    </div>
-
-                                    <div className='bg-white border-t-[1px]  mt-[10px] sm:w-[45%] sm:absolute sm:right-[17px] md:hidden'></div>
-
-                                    <div className='flex gap-3 mt-[10px] sm:absolute sm:right-[15px] sm:bottom-[60px] sm:w-[45%] md:hidden'>
-                                        <p>工作室</p>
-                                        <p>/</p>
-                                        <p>微信</p>
-                                        <p>/</p>
-                                        <p>电子邮件</p>
-                                    </div>
-
-                                </div>
+                               <div className=' h-[40%]'>
+                                <div className='border-t-[1px] border-white '></div>
+                                <Footer/>
+                               </div>
                             </ul>
 
 
@@ -120,7 +88,7 @@ const header = () => {
 
                         </div>
                     ) : (
-                        <div className=' flex  items-center px-[20px] md:w-[80px] md:px-[20px] '>
+                        <div className='bg-white flex  items-center px-[20px] md:w-[80px] md:px-[20px] '>
                             {/* mason logo */}
                             <div className=' md:hidden  '>
                                 <Link href='/' >  <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[70%] ' /> </Link>

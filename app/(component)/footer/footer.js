@@ -34,7 +34,7 @@ const footer = () => {
 
         </div>
 
-        <div className=' md:hidden border-t-[1px] border-gray-300 mt-[10px]'></div>
+        <div className=' md:hidden border-t-[1px] border-white mt-[10px]'></div>
 
         <div className='md:hidden flex gap-3 mt-[10px]'>
           <p>工作室</p>
