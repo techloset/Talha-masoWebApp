@@ -2,6 +2,7 @@
 'use client'
 import Image from 'next/image'
 import React, { useState } from 'react'
+import Link from 'next/link'
 import './MyComponent.css'
 
 
@@ -99,8 +100,8 @@ const main = () => {
                     <Image src='/images/mason.svg' alt="mason logo" height='100' width='100' className='cursor-pointer w-[50%] hidden md:block md:ml-[25px] md:mt-[7px] ' />
 
                     <div className='md:m-auto pt-[5px] '>
-                    <h2 className=' text-[#0A0A0A]    md:text-[24px] md:mt-[10px]   md:ml-[25px]'>{headingText}</h2>
-                    <p className='text-[#505050] md:text-[20px]  md:my-auto md:mt-[5px] md:ml-[25px] md:w-[80%]'>{paraText}</p>
+                        <h2 className=' text-[#0A0A0A]    md:text-[24px] md:mt-[10px]   md:ml-[25px]'>{headingText}</h2>
+                        <p className='text-[#505050] md:text-[20px]  md:my-auto md:mt-[5px] md:ml-[25px] md:w-[80%]'>{paraText}</p>
                     </div>
                 </div>
 
@@ -135,24 +136,23 @@ const main = () => {
 
                         <div className=' col-span-4 grid-flow-row '>
 
-                            <div className={`  group h-[48%] md:h-[50%] bg-cover bg-center mb-[5px] sm:mb-[6px]     ${kalaRang5 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover5}
-                                onMouseLeave={onmouseLeavee5} >
-                            </div>
-                            <div className={` blackman h-[50%] md:h-[50%]  bg-cover bg-center    ${kalaRang6 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover6}
-                                onMouseLeave={onmouseLeavee6}>
-                            </div>
-
+                            <Link href='/pages/about'> <div className={`  group h-[48%] md:h-[50%] bg-cover bg-center mb-[5px] sm:mb-[6px]     ${kalaRang5 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover5}
+                                onMouseLeave={onmouseLeavee5} ></div></Link>
+                        <div className={` blackman h-[50%] md:h-[50%]  bg-cover bg-center    ${kalaRang6 ? '  filter grayscale-0' : 'filter grayscale'}  `} onMouseEnter={toggleHover6}
+                            onMouseLeave={onmouseLeavee6}>
                         </div>
 
-                        <div className=' grid col-span-8 '>
-                            <div className={` tree  bg-cover bg-center    ${kalaRang4 ? '  filter grayscale-0' : 'filter grayscale'}  `}
-                                onMouseEnter={toggleHover4} onMouseLeave={onmouseLeavee4} > </div>
-                        </div>
                     </div>
 
+                    <div className=' grid col-span-8 '>
+                        <div className={` tree  bg-cover bg-center    ${kalaRang4 ? '  filter grayscale-0' : 'filter grayscale'}  `}
+                            onMouseEnter={toggleHover4} onMouseLeave={onmouseLeavee4} > </div>
+                    </div>
                 </div>
 
             </div>
+
+        </div>
 
 
 

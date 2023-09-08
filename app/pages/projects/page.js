@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import { data } from './data'
 
+var lineColor;
+
+
 const page = () => {
 
 
@@ -9,6 +12,7 @@ const page = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
+    lineColor = {borderColor: "black !important"}
     setHoveredIndex(index);
     const targetElement = document.getElementById(`${index}`);
     if (targetElement) {
@@ -533,23 +537,31 @@ const page = () => {
       <div className="hidden md:grid md:grid-cols-12">
         <div className="md:col-span-8  md:main">
           <p className="md:pb-[30px] md:text-[44px]">Projects</p>
+
           <div>
-            <table className="md:text-[15px]">
+           {/* table content */}
+           <table className="md:text-[15px]">
               <tbody>
+                <tr>
+                  <th style={lineColor}>Date</th>
+                  <th style={lineColor}>Name</th>
+                  <th style={lineColor}>Type</th>
+                </tr>
                 {projects.map((project, index) => (
                   <tr
                     key={index}
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={() => handleMouseLeave(index)}
-
+                 
                   >
-                    <td>{project.year}</td>
-                    <td>{project.name}</td>
-                    <td>{project.category}</td>
+                    <td style={lineColor}>{project.year}</td>
+                    <td style={lineColor}>{project.name}</td>
+                    <td style={lineColor}>{project.category}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
+
           </div>
         </div>
 

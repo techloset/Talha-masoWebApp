@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const header = () => {
 
-    const [navbar, setNavbar] = useState(false)
+    const [navbar, setNavbar] = useState(true)
     return (
         <div className='   '>
 
@@ -16,7 +16,7 @@ const header = () => {
 
                 {
                     navbar ? (
-                        <div className='  bg-[#F2CCBA] w-full h-screen md:pb-[30px]  '>
+                        <div className='  bg-[#F2CCBA] w-full h-screen md:pb-[30px] lg:flex lg:flex-col '>
 
                             <div className=' flex justify-around   items-center px-[20px] md:w-[10%] '>
 
@@ -70,9 +70,9 @@ const header = () => {
 
                                 {/* footer */}
 
-                                <div className=' text-[12.8px] pt-[23px] bg-orange-500   sm:mt-[120px] sm:pt-0 md:mt-0  '>
+                                <div className=' text-[12.8px] pt-[23px]    sm:mt-[120px] sm:pt-0 md:mt-0  '>
 
-                                    <div className='border-t-[1px] border-white  mt-[50px] md:pt-[2%] sm:w-[45%] md:w-auto'></div>
+                                    <div className='border-t-[1px] border-white  mt-[50px] md:pt-[2%] sm:w-[45%] md:w-auto lg:mt-[60px] '></div>
 
                                     <div className='flex justify-start md:justify-between md:items-center   mt-[20px] '>
 
