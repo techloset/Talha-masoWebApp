@@ -157,7 +157,7 @@ const ProjectDetail = ({ response }) => {
               let route = item.fields.slug.toLowerCase().replace(/\s+/g, '-'); // Declare route variable here
 
               return (
-                <Link  href={`/pages/projects/${route}`}>
+                <Link key={index}  href={`/pages/projects/${route}`}>
                   <div  onMouseEnter={() => onMouseEnterPicture(route)} id={`${index}`} className={` ${imageScroll ? '' : '  mb-[10px] '} `}>
                     <Image  width={300} height={500} className='w-[100%]' src={'https:' + item.fields.image.fields.file.url} alt={item.fields.name} />
                   </div>
