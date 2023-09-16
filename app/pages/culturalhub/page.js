@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
-import Footer from '@/app/(component)/footer/footer'
+import Footer from '@/app/(component)/footer/Footer'
 
 const page = () => {
     return (
         <div className=' absolute  -z-10 top-12 md:top-0 px-[20px] pb-[45px]  md:px-[90px] md:py-[90px] '>
 
-            {/* heading and sub heading */}
+
             <p className='text-[25.6px] py-[15px ] md:text-[44px] md:h-[82px]  md:px-[15px]'>Cultural Hub </p>
 
             <div className='md:grid md:grid-cols-2'>
@@ -19,25 +19,25 @@ const page = () => {
                 </div>
 
                 <div className='md:grid md:col-span-1 md:mt-[40px] md:px-[15px]'>
-                    <Image src='/images/cultural1.jpg' width='100' height='100' className=' w-full ' />
+                    <Image src='/images/cultural1.jpg' alt='image' width='100' height='100' className=' w-full ' />
                     <div className='hidden md:block mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
                 </div>
             </div>
 
             <div className='md:hidden mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
 
-            {/* grid 2nd */}
+
 
             <div className='md:grid md:grid-cols-2 '>
 
                 <div className='md:grid md:col-span-1  md:px-[15px]'>
-                    <Image src='/images/cultural2.jpg' width='100' height='100' className=' w-full mt-[10px]' />
+                    <Image src='/images/cultural2.jpg' alt='image' width='100' height='100' className=' w-full mt-[10px]' />
 
                 </div>
 
                 <div className='md:hidden mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
 
-                {/* text */}
+
                 <div className='md:grid md:col-span-1 md:px-[15px]'>
                     <p className='text-[22px] md:text-[26px]'> The Gallery at Mason Studio</p>
                     <p className='text-[12px] py-[18px] md:py-0 text-[#6E6E6E]  md:text-[15px] md:my-[21px] '>Housed within the Cultural Hub, The Gallery is a platform for artists, designers, and makers by providing space and opportunities for emerging talent and established professionals.  Individuals from equity deserving communities are prioritized in the Gallery to ensure diverse ideas and experiences are expressed through exhibitions, talks, events and programming.  </p>
@@ -50,9 +50,9 @@ const page = () => {
 
 
 
-            {/* gray line */}
+
             <div className=' mt-[20px] border-b-[1px] border-gray-300 '> </div>
-            {/* footer */}
+
             <Footer />
 
         </div>

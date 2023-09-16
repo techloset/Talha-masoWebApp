@@ -1,12 +1,10 @@
 import React from 'react'
 
-const footer = () => {
+const Footer = () => {
   return (
-    <div>
+    <>
 
       <div className=' text-[12.8px] pt-[10px]    '>
-
-        {/* <div className='border-t-[1.5px] border-gray  mt-[50px]  '></div> */}
 
         <div className='flex justify-start md:justify-between  mt-[20px] '>
 
@@ -19,18 +17,16 @@ const footer = () => {
           </div>
 
           <div className='  text-[#000000] '>
-            <p className=''>91 Pelham Avenue</p>
+            <p>91 Pelham Avenue</p>
             <p >Toronto, Canada</p>
             <p>M6N 1A5</p>
           </div>
 
           <div className='hidden md:block '>
-          <p>工作室</p>
-          {/* <p>/</p> */}
-          <p>微信</p>
-          {/* <p>/</p> */}
-          <p>电子邮件</p>
-        </div>
+            <p>工作室</p>
+            <p>微信</p>
+            <p>电子邮件</p>
+          </div>
 
         </div>
 
@@ -45,8 +41,8 @@ const footer = () => {
         </div>
 
       </div>
-    </div>
+    </>
   )
 }
 
-export default footer
+export default Footer

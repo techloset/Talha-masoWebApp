@@ -1,15 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
-import Footer from '@/app/(component)/footer/footer'
+import Footer from '@/app/(component)/footer/Footer'
 
 const page = () => {
     return (
         <div className=' absolute  -z-10 top-12 px-[20px] pb-[45px]  md:top-0 md:p-[90px] '>
 
-            {/* About */}
+
             <p className='text-[25.6px]  h-[82.79px] md:text-[44px]  md:px-[15px]'>About</p>
 
-            {/* grid 1 */}
+
             <div className='md:grid md:grid-cols-2   '>
 
                 <div className='md:grid md:col-span-1 md:px-[15px]  md:font-[300]'>
@@ -26,9 +26,9 @@ const page = () => {
                     <div className='hidden md:block mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
                 </div>
 
-                {/* image section */}
+
                 <div className='md:grid md:col-span-1 md:mt-[40px] md:px-[15px]'>
-                    <Image src='/images/aboutt2.jpg' width='100' height='100' className=' w-full ' />
+                    <Image src='/images/aboutt2.jpg' alt='image' width='100' height='100' className=' w-full ' />
                     <div className='hidden md:block mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
                 </div>
 
@@ -37,17 +37,17 @@ const page = () => {
 
             <div className='md:hidden mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
 
-            {/* grid 2nd */}
+
             <div className='md:grid md:grid-cols-2   '>
                 <div className='md:grid md:col-span-1  md:px-[15px]'>
-                    <Image src='/images/about1.jpg' width='100' height='100' className=' w-full mt-[10px]' />
+                    <Image src='/images/about1.jpg' alt='image' width='100' height='100' className=' w-full mt-[10px]' />
                     <div className='hidden md:block mt-[30px] mb-[20px]  border-b-[1px] border-gray-300 '> </div>
                 </div>
 
                 <div className='md:hidden mt-[30px] mb-[20px] border-b-[1px] border-gray-300 '> </div>
 
 
-                {/* text */}
+
                 <div className='md:grid md:col-span-1 md:px-[15px]  md:font-[300]'>
 
                     <p className='text-[12px] md:text-[15px] text-[#6E6E6E]'> Co-Founder, Executive Director</p>
@@ -71,7 +71,7 @@ const page = () => {
 
 
 
-            {/* Awards links */}
+
             <div className='md:grid md:grid-cols-2 '>
 
 
@@ -183,7 +183,7 @@ const page = () => {
                 <div className='md:hidden my-[20px] border-b-[1px] border-gray-300 '> </div>
 
 
-                {/* Press heading */}
+
                 <div className='md:grid md:col-span-1  md:px-[15px]'>
                     <p className='text-[18px] pb-[15px] '>Press</p>
 

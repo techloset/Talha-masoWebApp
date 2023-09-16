@@ -3,15 +3,14 @@
 
 import React, { useState } from "react";
 import { data } from './data'
-import Footer from "@/app/(component)/footer/footer";
+import Footer from "@/app/(component)/footer/Footer";
 
-// import ReactReadMoreReadLess from "react-read-more-read-less";
+
 
 
 
 const Page = () => {
 
-    // const [isExpanded, setIsExpanded] = useState(false);
 
     const [isShowMore, setIsShowMore] = useState(false);
 
@@ -31,9 +30,9 @@ const Page = () => {
                 Sharing our latest news, <br /> collaborations and events.
             </div>
             <div className="hidden lg:block md:text-[24px]  ">
-              <p className=" w-[65%]">  Sharing our latest news,  collaborations and events.</p>
+                <p className=" w-[65%]">  Sharing our latest news,  collaborations and events.</p>
             </div>
-            
+
             <div className='hidden md:block md:my-[30px] lg:mt-[30px] md:border-b-[1px] md:border-gray-300 '> </div>
 
 
@@ -43,10 +42,10 @@ const Page = () => {
                 <div className='hidden lg:block lg:relative lg:top-[1180px] lg:border-b-[1px] lg:border-gray-300 '> </div>
                 <div className='hidden lg:block lg:relative lg:top-[1180px] lg:border-b-[1px] lg:border-gray-300 '> </div>
                 {
-                    data.map((item,index) => (
+                    data.map((item, index) => (
                         <div key={index} className=''>
                             <div className=" md:w-[100%] ">
-                                <img src={item.imageuurl} className=' mx-auto mt-[10px]  ' />
+                                <img src={item.imageuurl} alt="img" className=' mx-auto mt-[10px]  ' />
                             </div>
 
                             <p className='text-[18px] mt-[10px] md:text-[26px] '>{item.heading}</p>
