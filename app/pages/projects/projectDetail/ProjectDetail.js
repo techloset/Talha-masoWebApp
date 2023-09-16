@@ -40,8 +40,8 @@ const ProjectDetail = ({ response }) => {
     if (targetElementNext) {
 
       if (hoveredIndex) {
-        prevHoveredImage.style.opacity = '0.50';
-        prevHoveredImage.style.opacity = '0.50';
+        hoveredIndex.style.opacity = '0.50';
+        hoveredIndex.style.opacity = '0.50';
       }
 
       targetElementNext.style.opacity = '100'
@@ -92,20 +92,7 @@ const ProjectDetail = ({ response }) => {
         ))}
 
 
-        {/* {itemsArray.map((item, index) => (
-          
-          <div key={index} className='pb-[20px]'>
-            <div className='w-full h-full relative'>
-              <Image
-                layout="fill"
-                objectFit="cover"
-                src={'https:' + item.fields.image.fields.file.url}
-                alt={item.fields.name}
-              />
-            </div>
-            <p className='text-[12px] text-[#6E6E6E] mt-[10px]'> {item.fields.name} </p>
-          </div>
-        ))} */}
+        
 
       </div>
 
@@ -127,7 +114,7 @@ const ProjectDetail = ({ response }) => {
               </thead>
               <tbody>
                 {itemsArray.map((item, index) => {
-                  // Generate a slug based on the project name
+                 
                   let route = item.fields.slug.toLowerCase().replace(/\s+/g, '-');
 
                   return (
@@ -135,19 +122,19 @@ const ProjectDetail = ({ response }) => {
                       onMouseEnter={() => handleMouseEnter(index)}
                       onMouseLeave={() => handleMouseLeave(index)} className="">
                       <td className="">
-                        {/* Wrap the date with a Link */}
+                       
                         <Link href={`/pages/projects/${route}`}>
                           {item.fields.date}
                         </Link>
                       </td>
                       <td className="">
-                        {/* Wrap the name with a Link */}
+                        
                         <Link href={`/pages/projects/${route}`}>
                           {item.fields.name}
                         </Link>
                       </td>
                       <td className="">
-                        {/* Wrap the type with a Link */}
+                       
                         <Link href={`/pages/projects/${route}`}>
                           {item.fields.type}
                         </Link>
@@ -160,7 +147,7 @@ const ProjectDetail = ({ response }) => {
           </>
         </div>
 
-        {/* Display images in a loop */}
+        
         <div className="md:imgParent md:col-span-6 md:p-[7.5px] ">
           <div className='md:imgSection'>
             {itemsArray.map((item, index) => {

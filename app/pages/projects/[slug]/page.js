@@ -1,5 +1,3 @@
-// Import necessary modules and Client
-// 'use client'
 import React from 'react'
 import { Client } from '@/app/lib/contentful'
 import Image from 'next/image';
@@ -7,28 +5,28 @@ import Footer from '@/app/(component)/footer/Footer';
 import Link from 'next/link';
 
 const Page = async ({ params }) => {
-  // Fetch entries based on content type 'project' and the slug parameter
+
   const response = await Client.getEntries({
     content_type: 'project',
-    'fields.slug': params.slug, // Assuming 'slug' is a field in your content model
+    'fields.slug': params.slug,
   });
 
-  // Check if there are any entries with the provided slug
+
   if (response.items.length === 0) {
     return <div>No matching data found for this slug.</div>;
   }
 
-  // Extract the first matching entry
+
   const entry = response.items[0];
 
 
-  // Extract the fields you want to display
+
   const { name, type, location, date, description, featuredImage } = entry.fields;
 
   const imageUrls = featuredImage.map((image) => image.fields.file.url);
   // console.log(imageUrls)
 
-  // console.log(entry)
+
   return (
     <>
       <div className=' flex  mt-[10px] ml-[90%]  p-[10px]  fixed' >
@@ -99,5 +97,5 @@ const Page = async ({ params }) => {
     </>
   );
 }
-// entry.fields.featuredImage.fields.file.url
+
 export default Page;
