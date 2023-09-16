@@ -18,7 +18,7 @@ const ProjectDetail = ({ response }) => {
     setHoveredIndex(index);
     const targetElement = document.getElementById(`${index}`);
     if (targetElement) {
-      const offsetTop = targetElement.offsetTop - 100; 
+      const offsetTop = targetElement.offsetTop - 100;
       window.scrollTo({
         top: offsetTop,
         behavior: 'smooth',
@@ -73,17 +73,6 @@ const ProjectDetail = ({ response }) => {
           <p className=' text-[25.6px]'>Projects</p>
         </div>
 
-        {/* {
-          data.map((item, index) => (
-            <div key={index} className='pb-[20px]'>
-              <img src={item.imageuurl} alt="image" className='pb-[10px] ' />
-              <p className='text-[12px] text-[#6E6E6E] '> {item.heading} </p>
-            </div>
-          ))
-        } */}
-
-
-
         {itemsArray.map((item, index) => (
           <div key={index} className='pb-[20px]'>
             <Image key={index} width={1000} height={500} className=' ' src={'https:' + item.fields.image.fields.file.url} alt={item.fields.name} />
@@ -91,17 +80,12 @@ const ProjectDetail = ({ response }) => {
           </div>
         ))}
 
-
-        
-
       </div>
-
 
 
       <div className='hidden md:grid md:grid-cols-12 '>
         <div className='md:col-span-6  md:main '>
           <p className="md:pb-[30px] md:text-[44px]">Projects</p>
-
 
           <>
             <table className="md:text-[15px]">
@@ -114,7 +98,7 @@ const ProjectDetail = ({ response }) => {
               </thead>
               <tbody>
                 {itemsArray.map((item, index) => {
-                 
+
                   let route = item.fields.slug.toLowerCase().replace(/\s+/g, '-');
 
                   return (
@@ -122,19 +106,19 @@ const ProjectDetail = ({ response }) => {
                       onMouseEnter={() => handleMouseEnter(index)}
                       onMouseLeave={() => handleMouseLeave(index)} className="">
                       <td className="">
-                       
+
                         <Link href={`/pages/projects/${route}`}>
                           {item.fields.date}
                         </Link>
                       </td>
                       <td className="">
-                        
+
                         <Link href={`/pages/projects/${route}`}>
                           {item.fields.name}
                         </Link>
                       </td>
                       <td className="">
-                       
+
                         <Link href={`/pages/projects/${route}`}>
                           {item.fields.type}
                         </Link>
@@ -147,7 +131,7 @@ const ProjectDetail = ({ response }) => {
           </>
         </div>
 
-        
+
         <div className="md:imgParent md:col-span-6 md:p-[7.5px] ">
           <div className='md:imgSection'>
             {itemsArray.map((item, index) => {
@@ -164,7 +148,6 @@ const ProjectDetail = ({ response }) => {
             })}
           </div>
         </div>
-
 
       </div>
 

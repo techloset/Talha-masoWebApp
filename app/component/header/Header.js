@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image'
-import Footer from '@/app/(component)/footer/Footer'
+import Footer from '@/app/component/footer/Footer'
 
 import Link from 'next/link'
 

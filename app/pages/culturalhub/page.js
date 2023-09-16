@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Footer from '@/app/(component)/footer/Footer'
+import Footer from '@/app/component/footer/Footer'
 
 const page = () => {
     return (

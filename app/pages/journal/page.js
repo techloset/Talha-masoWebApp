@@ -1,12 +1,7 @@
 'use client'
-
-
 import React, { useState } from "react";
 import { data } from './data'
-import Footer from "@/app/(component)/footer/Footer";
-
-
-
+import Footer from '@/app/component/footer/Footer'
 
 
 const Page = () => {
