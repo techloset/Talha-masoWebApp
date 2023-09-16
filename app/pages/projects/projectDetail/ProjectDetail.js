@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-// improt {data}
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
@@ -19,7 +18,7 @@ const ProjectDetail = ({ response }) => {
     setHoveredIndex(index);
     const targetElement = document.getElementById(`${index}`);
     if (targetElement) {
-      const offsetTop = targetElement.offsetTop - 100; // Adjust the offset as needed
+      const offsetTop = targetElement.offsetTop - 100; 
       window.scrollTo({
         top: offsetTop,
         behavior: 'smooth',
@@ -30,15 +29,32 @@ const ProjectDetail = ({ response }) => {
   const handleMouseLeave = (index) => {
     setHoveredIndex(null);
     const targetElementSecond = document.getElementById(`${index}`);
-    if (targetElementSecond) {
-      // targetElementSecond.previousElementSibling.style.opacity = 100
-      // targetElementSecond.nextElementSibling.style.opacity = 100
-    }
+
 
     setImageScroll(false);
   };
 
+  const onMouseEnterPicture = (index) => {
+    const targetElementNext = document.getElementById(`${index}`);
 
+    if (targetElementNext) {
+
+      if (hoveredIndex) {
+        prevHoveredImage.style.opacity = '0.50';
+        prevHoveredImage.style.opacity = '0.50';
+      }
+
+      targetElementNext.style.opacity = '100'
+
+      const offsetTopss = targetElementNext.offsetTop - 50;
+      targetElementNext.scrollIntoView({
+        top: offsetTopss,
+        behavior: 'smooth',
+        block: 'center'
+      });
+      setHoveredIndex(targetElementNext);
+    }
+  };
 
   let routers = useRouter();
   // Check if response is a string (JSON) and parse it into an object
@@ -112,7 +128,7 @@ const ProjectDetail = ({ response }) => {
               <tbody>
                 {itemsArray.map((item, index) => {
                   // Generate a slug based on the project name
-                  const route = item.fields.slug.toLowerCase().replace(/\s+/g, '-');
+                  let route = item.fields.slug.toLowerCase().replace(/\s+/g, '-');
 
                   return (
                     <tr key={index}
@@ -147,14 +163,21 @@ const ProjectDetail = ({ response }) => {
         {/* Display images in a loop */}
         <div className="md:imgParent md:col-span-6 md:p-[7.5px] ">
           <div className='md:imgSection'>
-            {itemsArray.map((item, index) => (
-              <div key={index} id={`${index}`} className={` ${imageScroll ? 'relative w-[50%] h-[100px]' : 'opacity-100  mb-[10px] relative scroll-smooth'} ${hoveredIndex === index ? 'opacity-100' : 'opacity-30'
-                }`}>
-                <Image key={index} width={300} height={500} className='w-[100%]' src={'https:' + item.fields.image.fields.file.url} alt={item.fields.name} />
-              </div>
-            ))}
+            {itemsArray.map((item, index) => {
+              const route = item.fields.slug.toLowerCase().replace(/\s+/g, '-'); // Declare route variable here
+
+              return (
+                <Link key={index} href={`/pages/projects/${route}`}>
+                  <div onMouseEnter={() => onMouseEnterPicture(route)} id={`${route}`} className={` ${imageScroll ? 'relative w-[50%] h-[100px]' : 'opacity-100  mb-[10px] relative scroll-smooth'} ${hoveredIndex === route ? 'opacity-100' : 'opacity-30'
+                    }`}>
+                    <Image key={index} width={300} height={500} className='w-[100%]' src={'https:' + item.fields.image.fields.file.url} alt={item.fields.name} />
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
+
 
       </div>
 
