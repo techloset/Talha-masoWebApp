@@ -29,7 +29,7 @@ const Page = async ({ params }) => {
 
   return (
     <>
-      <div className='hidden  md:flex  md:mt-[10px] md:ml-[90%]  md:p-[10px]   md:fixed' >
+      <div className='hidden  md:flex  md:mt-[10px] md:ml-[93%]  md:p-[10px]   md:fixed' >
         <Link href='/pages/projects'>
           <Image src='/images/cross.svg' alt='cross' width='100' height='100' className=' mt-[8px]  w-[20px] h-[20px] cursor-pointer  ' />
         </Link>
