@@ -159,7 +159,7 @@ const ProjectDetail = ({ response }) => {
               return (
                 <Link key={index}  href={`/pages/projects/${route}`}>
                   <div  onMouseEnter={() => onMouseEnterPicture(route)} id={`${index}`} className={` ${imageScroll ? '' : '  mb-[10px] '} `}>
-                    <Image  width={300} height={500} className='w-[100%]' src={'https:' + item.fields.image.fields.file.url} alt={item.fields.name} />
+                    <Image key={index}  width={300} height={500} className='w-[100%]' src={'https:' + item.fields.image.fields.file.url} alt={item.fields.name} />
                   </div>
                 </Link>
               );
