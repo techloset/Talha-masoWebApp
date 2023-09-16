@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
 
-var lineColor;
+// var lineColor;
 
 const ProjectDetail = ({ response }) => {
 
@@ -14,7 +14,7 @@ const ProjectDetail = ({ response }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
-    lineColor = { borderColor: "black !important" }
+    // lineColor = { borderColor: "black !important" }
     setHoveredIndex(index);
     const targetElement = document.getElementById(`${index}`);
     if (targetElement) {
@@ -28,7 +28,7 @@ const ProjectDetail = ({ response }) => {
 
   const handleMouseLeave = (index) => {
     setHoveredIndex(null);
-    const targetElementSecond = document.getElementById(`${index}`);
+    // const targetElementSecond = document.getElementById(`${index}`);
 
 
     setImageScroll(false);
@@ -40,11 +40,11 @@ const ProjectDetail = ({ response }) => {
     if (targetElementNext) {
 
       if (hoveredIndex) {
-        hoveredIndex.style.opacity = '0.50';
-        hoveredIndex.style.opacity = '0.50';
+        // hoveredIndex.style.opacity = '0.50';
+        // hoveredIndex.style.opacity = '0.50';
       }
 
-      targetElementNext.style.opacity = '100'
+      // targetElementNext.style.opacity = '100'
 
       const offsetTopss = targetElementNext.offsetTop - 50;
       targetElementNext.scrollIntoView({
@@ -55,7 +55,8 @@ const ProjectDetail = ({ response }) => {
       setHoveredIndex(targetElementNext);
     }
   };
-
+  // const imageOpacity = (index) => (hoveredIndex === index ? 1 : 0.3);
+  
   let routers = useRouter();
   // Check if response is a string (JSON) and parse it into an object
   const parsedResponse = typeof response === 'string' ? JSON.parse(response) : {};
@@ -73,6 +74,17 @@ const ProjectDetail = ({ response }) => {
           <p className=' text-[25.6px]'>Projects</p>
         </div>
 
+        {/* {
+          data.map((item, index) => (
+            <div key={index} className='pb-[20px]'>
+              <img src={item.imageuurl} alt="image" className='pb-[10px] ' />
+              <p className='text-[12px] text-[#6E6E6E] '> {item.heading} </p>
+            </div>
+          ))
+        } */}
+
+
+
         {itemsArray.map((item, index) => (
           <div key={index} className='pb-[20px]'>
             <Image key={index} width={1000} height={500} className=' ' src={'https:' + item.fields.image.fields.file.url} alt={item.fields.name} />
@@ -80,17 +92,22 @@ const ProjectDetail = ({ response }) => {
           </div>
         ))}
 
+
+
+
       </div>
+
 
 
       <div className='hidden md:grid md:grid-cols-12 '>
         <div className='md:col-span-6  md:main '>
           <p className="md:pb-[30px] md:text-[44px]">Projects</p>
 
+
           <>
-            <table className="md:text-[15px]">
+            <table className="md:text-[15px]  ">
               <thead>
-                <tr>
+                <tr  >
                   <th className="">Date</th>
                   <th className="">Name</th>
                   <th className="">Type</th>
@@ -104,8 +121,10 @@ const ProjectDetail = ({ response }) => {
                   return (
                     <tr key={index}
                       onMouseEnter={() => handleMouseEnter(index)}
-                      onMouseLeave={() => handleMouseLeave(index)} className="">
-                      <td className="">
+                      onMouseLeave={() => handleMouseLeave(index)}
+                      id={`${route}`} 
+                      className=''>
+                      <td >
 
                         <Link href={`/pages/projects/${route}`}>
                           {item.fields.date}
@@ -135,19 +154,24 @@ const ProjectDetail = ({ response }) => {
         <div className="md:imgParent md:col-span-6 md:p-[7.5px] ">
           <div className='md:imgSection'>
             {itemsArray.map((item, index) => {
-              const route = item.fields.slug.toLowerCase().replace(/\s+/g, '-'); // Declare route variable here
+              let route = item.fields.slug.toLowerCase().replace(/\s+/g, '-'); // Declare route variable here
 
               return (
-                <Link key={index} href={`/pages/projects/${route}`}>
-                  <div onMouseEnter={() => onMouseEnterPicture(route)} id={`${route}`} className={` ${imageScroll ? 'relative w-[50%] h-[100px]' : 'opacity-100  mb-[10px] relative scroll-smooth'} ${hoveredIndex === route ? 'opacity-100' : 'opacity-30'
-                    }`}>
-                    <Image key={index} width={300} height={500} className='w-[100%]' src={'https:' + item.fields.image.fields.file.url} alt={item.fields.name} />
+                <Link  href={`/pages/projects/${route}`}>
+                  <div  onMouseEnter={() => onMouseEnterPicture(route)} id={`${index}`} className={` ${imageScroll ? '' : '  mb-[10px] '} `}>
+                    <Image  width={300} height={500} className='w-[100%]' src={'https:' + item.fields.image.fields.file.url} alt={item.fields.name} />
                   </div>
                 </Link>
               );
             })}
           </div>
         </div>
+
+
+
+
+
+
 
       </div>
 
