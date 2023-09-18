@@ -119,7 +119,7 @@ const Main = () => {
 
             <div className=" col-span-4 grid-flow-row  ">
               <div
-                className={`  auction h-[48%] md:h-[47%] bg-cover bg-center mb-[5px] sm:mb-[12px]    ${
+                className={`  auction h-[48%] md:h-[48%] bg-cover bg-center mb-[5px] sm:mb-[4px] md:mb-[9px] lg:mb-[10px]    ${
                   kalaRang2 ? "  filter grayscale-0" : "filter grayscale"
                 }  `}
                 onMouseEnter={toggleHover2}
@@ -127,7 +127,7 @@ const Main = () => {
               ></div>
 
               <div
-                className={` moon h-[50%] md:h-[47%]  bg-cover bg-center    ${
+                className={` moon h-[50%] md:h-[48%]  bg-cover bg-center    ${
                   kalaRang3 ? "  filter grayscale-0" : "filter grayscale"
                 }  `}
                 onMouseEnter={toggleHover3}
