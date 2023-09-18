@@ -1,28 +1,23 @@
-
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
- 
-  
-    // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       screens: {
-        'sm': '517px',
-        // => @media (min-width: 640px) { ... }
-        'md': '767px',
-        // => @media (min-width: 1024px) { ... }  
-        'lg': '1023px',
-        // => @media (min-width: 1024px) { ... }  
+        sm: "517px",
+
+        md: "767px",
+
+        lg: "1023px",
       },
-      fontFamily: { 
+      fontFamily: {
         FREE: ["FREE"],
       },
     },
   },
   plugins: [],
-}
+};

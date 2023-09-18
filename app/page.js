@@ -1,12 +1,12 @@
-import React from 'react'
-import Main from './pages/main/main'
+import React from "react";
+import Main from "./pages/main/main";
 
 const page = () => {
   return (
     <div>
-      <Main/>
+      <Main />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
