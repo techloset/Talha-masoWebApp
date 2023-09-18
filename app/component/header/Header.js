@@ -124,7 +124,7 @@ const Header = () => {
             </ul>
           </div>
         ) : (
-          <div className="bg-white flex  items-center px-[20px] md:w-[80px] md:px-[20px] ">
+          <div className="bg-white md:bg-transparent flex  items-center px-[20px] md:w-[80px] md:px-[20px] ">
             <div className=" md:hidden  ">
               <Link href="/">
                 {" "}
