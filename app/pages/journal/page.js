@@ -1,13 +1,22 @@
-"use client";
+'use client'
 import React, { useState } from "react";
 import { data } from "./data";
 import Footer from "@/app/component/footer/Footer";
+import Image from "next/image";
 
 const Page = () => {
-  const [isShowMore, setIsShowMore] = useState(false);
+  const [isOpen, setIsOpen] = useState(new Array(data.length).fill(false));
 
-  const toggleReadMoreLess = () => {
-    setIsShowMore(!isShowMore);
+  const toggleReadMore = (index) => {
+    const updatedOpenState = [...isOpen];
+    updatedOpenState[index] = !updatedOpenState[index];
+    setIsOpen(updatedOpenState);
+  };
+
+  const closeReadMore = (index) => {
+    const updatedOpenState = [...isOpen];
+    updatedOpenState[index] = false;
+    setIsOpen(updatedOpenState);
   };
 
   return (
@@ -30,25 +39,15 @@ const Page = () => {
       </div>
 
       <div className="  lg:grid lg:grid-cols-2 lg:gap-10 lg:h-[40%]">
-        <div className="hidden lg:block lg:relative lg:top-[580px] lg:border-b-[1px] lg:border-gray-300 ">
-          {" "}
-        </div>
-        <div className="hidden lg:block lg:relative lg:top-[580px] lg:border-b-[1px] lg:border-gray-300 ">
-          {" "}
-        </div>
-        <div className="hidden lg:block lg:relative lg:top-[1180px] lg:border-b-[1px] lg:border-gray-300 ">
-          {" "}
-        </div>
-        <div className="hidden lg:block lg:relative lg:top-[1180px] lg:border-b-[1px] lg:border-gray-300 ">
-          {" "}
-        </div>
         {data.map((item, index) => (
-          <div key={index} className="">
+          <div key={index} className=" mb-4 border-b border-gray-300">
             <div className=" md:w-[100%] ">
-              <img
+              <Image
                 src={item.imageuurl}
                 alt="img"
-                className=" mx-auto mt-[10px]  "
+                width={100}
+                height={100}
+                className=" w-[100%] mx-auto mt-[10px]  "
               />
             </div>
 
@@ -61,77 +60,30 @@ const Page = () => {
               <p className=" md:text-[15px] ">{item.Location}</p>
             </div>
 
-            {isShowMore && (
-              <div className="text-[12.8px] text-[#6E6E6E]">
-                <p>{item.para2}</p>
-                <p className=" py-[18px]">{item.para3}</p>
-                <p className=" py-[18px]">{item.para4}</p>
-                <p className=" py-[18px]">{item.para5}</p>
-
-                <div className="py-[18px]">
-                  <span>{item.para6}</span>
-                  <span className="">{item.para7}</span>
-                  <span>{item.para8}</span>
-                </div>
-
-                <p className="py-[18px] ">{item.para9}</p>
-                <p className="py-[18px]">{item.para10}</p>
-                <p className="py-[18px] text-[#000000] ">{item.para11}</p>
-
-                <div className="py-[18px]">
-                  <span className="text-[#000000] ">{item.para12}</span>
-                  <span>{item.para13}</span>
-                </div>
-
-                <div className="py-[18px]">
-                  <span className="text-[#000000] ">{item.para14}</span>
-                  <span>{item.para15}</span>
-                  <span>{item.para16}</span>
-                </div>
-
-                <div className="py-[18px]">
-                  <span className="text-[#000000] ">{item.para17}</span>
-                  <span>{item.para18}</span>
-                </div>
-
-                <div className="py-[18px]">
-                  <span className="text-[#000000] ">{item.para19}</span>
-                  <span>{item.para20}</span>
-                  <span>{item.para21}</span>
-                  <span className="text-[#000000] ">{item.para22}</span>
-                </div>
-              </div>
-            )}
-
-            <button onClick={toggleReadMoreLess}>
-              {isShowMore ? "Close ↑ " : "Read More ↓"}{" "}
-            </button>
-
-            <div className="lg:hidden my-[25px] border-b-[1px] border-gray-300 ">
-              {" "}
+            <div className="text-[12.8px] text-[#6E6E6E]">
+              {isOpen[index] ? (
+                <>
+                  <p className="text-[15px]">{item.para2}</p>
+                  <p className="py-[18px] text-[15px]">{item.para3}</p>
+                  {/* Add the rest of your content here */}
+                  <button className="text-[20px] text-[#000000]" onClick={() => closeReadMore(index)}>Close</button>
+                </>
+              ) : (
+                <>
+                  <p className="text-[15px]">{item.para2.slice(0, 100)}...</p>
+                  <button className="md:mb-[10px] text-[20px] text-[#000000]" onClick={() => toggleReadMore(index)}>
+                    Read More ↓
+                  </button>
+                </>
+              )}
             </div>
+
+            {/* <div className="lg:hidden my-[25px] border-b-[123px] border-black-300 ">
+              {" "}
+            </div> */}
+            {/* <div className="mt-[20px] border-b-[1px] border-black-300"></div> */}
           </div>
         ))}
-
-        <div className="hidden lg:block lg:relative lg:bottom-[50px] lg:my-[25px] lg:border-b-[1px] border-gray-300 ">
-          {" "}
-        </div>
-        <div className="hidden lg:block lg:relative lg:bottom-[75px] lg:border-b-[1px] border-gray-300 ">
-          {" "}
-        </div>
-
-        <div className="hidden lg:block lg:relative lg:bottom-[1300px] lg:border-b-[1px] lg:border-gray-300 ">
-          {" "}
-        </div>
-        <div className="hidden lg:block lg:relative lg:bottom-[1300px] lg:border-b-[1px] lg:border-gray-300 ">
-          {" "}
-        </div>
-        <div className="hidden lg:block lg:relative lg:bottom-[730px] lg:border-b-[1px] lg:border-gray-300 ">
-          {" "}
-        </div>
-        <div className="hidden lg:block lg:relative lg:bottom-[730px] lg:border-b-[1px] lg:border-gray-300 ">
-          {" "}
-        </div>
       </div>
 
       <Footer />
@@ -140,3 +92,4 @@ const Page = () => {
 };
 
 export default Page;
+

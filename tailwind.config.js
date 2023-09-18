@@ -13,6 +13,8 @@ module.exports = {
         md: "767px",
 
         lg: "1023px",
+
+        xl:"1300px",
       },
       fontFamily: {
         FREE: ["FREE"],

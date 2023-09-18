@@ -3,15 +3,15 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className=" text-[12.8px] pt-[10px]    ">
-        <div className="flex justify-start md:justify-between  mt-[20px] ">
-          <div className=" w-[60%]  text-[#000000] md:w-auto ">
+      <div className=" text-[12.8px] md:text-[15px] text-[#000000]  pt-[10px]    ">
+        <div className="flex justify-start md:justify-between  mt-[20px] leading-[22px]">
+          <div className=" w-[60%]   md:w-auto ">
             <p className="">+1 (416) 761-9736 </p>
             <p>Follow Us </p>
             <p>Send us an Email </p>
           </div>
 
-          <div className="  text-[#000000] ">
+          <div className=" md:ml-[-30%] text-[#000000] ">
             <p>91 Pelham Avenue</p>
             <p>Toronto, Canada</p>
             <p>M6N 1A5</p>

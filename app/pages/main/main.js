@@ -86,27 +86,27 @@ const Main = () => {
       }   mt-[10px] md:mt-[5px] px-[15px]   absolute top-10 -z-10 w-[100%] h-[88vh] md:top-0 md:p-[7.5px]  md:h-[98vh] overflow-y-hidden  `}
     >
       <div className="md:flex md:justify-evenly h-full md:h-full ">
-        <div className=" mb-[10px] h-[70px] md:h-[30%] md:m-auto   md:w-[80%]      md:ml-[50px] ">
+        <div className=" mb-[10px] h-[70px] md:h-auto  md:mb-0  md:pl-[90px] md:pr-[90px] md:w-[80%]       ">
           <Image
             src="/images/mason.svg"
             alt="mason logo"
             height="100"
             width="100"
-            className="cursor-pointer w-[50%] hidden md:block md:ml-[25px] md:mt-[7px] "
+            className="cursor-pointer  w-[50%] md:w-[80%] hidden md:block md:mt-[100px] lg:mt-[150px] "
           />
 
-          <div className="md:m-auto pt-[5px] ">
-            <h2 className=" text-[#0A0A0A]    md:text-[24px] md:mt-[10px]   md:ml-[25px]">
+          <div className="   leading-5 md:mt-[50px] md:leading-normal ">
+            <h2 className=" text-[#0A0A0A]    md:text-[24px] md:mt-[10px] ">
               {headingText}
             </h2>
-            <p className="text-[#505050] md:text-[20px]  md:my-auto md:mt-[5px] md:ml-[25px] md:w-[80%]">
+            <p className="text-[#505050] sm:pt-[30px] md:pt-0 md:w-[85%] text-[18px] md:text-[26px]  ">
               {paraText}
             </p>
           </div>
         </div>
 
-        <div className=" h-full   md:w-[80%] md:h-full  ">
-          <div className="grid grid-cols-12 gap-1 h-[40%]  md:h-[50%]  ">
+        <div className=" h-full my-[14px]  md:w-[80%] md:h-full ">
+          <div className="grid grid-cols-12 gap-3 h-[40%]  md:h-[50%]  ">
             <div className=" grid col-span-8  ">
               <div
                 className={` art bg-cover bg-center   ${
@@ -119,7 +119,7 @@ const Main = () => {
 
             <div className=" col-span-4 grid-flow-row  ">
               <div
-                className={`  auction h-[48%] md:h-[50%] bg-cover bg-center mb-[5px] sm:mb-[6px]    ${
+                className={`  auction h-[48%] md:h-[47%] bg-cover bg-center mb-[5px] sm:mb-[12px]    ${
                   kalaRang2 ? "  filter grayscale-0" : "filter grayscale"
                 }  `}
                 onMouseEnter={toggleHover2}
@@ -127,7 +127,7 @@ const Main = () => {
               ></div>
 
               <div
-                className={` moon h-[50%] md:h-[50%]  bg-cover bg-center    ${
+                className={` moon h-[50%] md:h-[47%]  bg-cover bg-center    ${
                   kalaRang3 ? "  filter grayscale-0" : "filter grayscale"
                 }  `}
                 onMouseEnter={toggleHover3}
@@ -136,12 +136,12 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-12 gap-1 h-[40%]  mt-[10px] md:h-[50%]  ">
+          <div className="grid grid-cols-12 gap-3 h-[40%]  mt-[10px] md:h-[50%]  ">
             <div className=" col-span-4 grid-flow-row ">
               <Link href="/pages/about">
                 {" "}
                 <div
-                  className={`  group h-[48%] md:h-[50%] bg-cover bg-center mb-[5px] sm:mb-[6px]     ${
+                  className={`  group h-[48%] md:h-[47%] bg-cover bg-center mb-[5px] sm:mb-[12px]     ${
                     kalaRang5 ? "  filter grayscale-0" : "filter grayscale"
                   }  `}
                   onMouseEnter={toggleHover5}
@@ -149,7 +149,7 @@ const Main = () => {
                 ></div>
               </Link>
               <div
-                className={` blackman h-[50%] md:h-[50%]  bg-cover bg-center    ${
+                className={` blackman h-[50%] md:h-[47%]  bg-cover bg-center    ${
                   kalaRang6 ? "  filter grayscale-0" : "filter grayscale"
                 }  `}
                 onMouseEnter={toggleHover6}

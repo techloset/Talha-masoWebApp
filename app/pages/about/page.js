@@ -11,7 +11,7 @@ const page = () => {
 
       <div className="md:grid md:grid-cols-2   ">
         <div className="md:grid md:col-span-1 md:px-[15px]  md:font-[300]">
-          <p className="text-[22.85px] md:w-[95%] ">
+          <p className="text-[22.85px] md:text-[26px] md:w-[95%] ">
             We have an optimistic view of humanity, and we believe in the
             potency of using design as a tool for actionable change.
           </p>
@@ -82,9 +82,9 @@ const page = () => {
           </div>
         </div>
 
-        <div className="md:grid md:col-span-1 md:mt-[40px] md:px-[15px]">
+        <div className="md:grid md:col-span-1 md:mt-[40px] lg:mt-0 md:px-[15px]">
           <Image
-            src="/images/aboutt2.jpg"
+            src="/images/about2.jpg"
             alt="image"
             width="100"
             height="100"
@@ -107,7 +107,7 @@ const page = () => {
             alt="image"
             width="100"
             height="100"
-            className=" w-full mt-[10px]"
+            className=" w-full mt-[10px] "
           />
           <div className="hidden md:block mt-[30px] mb-[20px]  border-b-[1px] border-gray-300 ">
             {" "}
@@ -118,16 +118,21 @@ const page = () => {
           {" "}
         </div>
 
-        <div className="md:grid md:col-span-1 md:px-[15px]  md:font-[300]">
-          <p className="text-[12px] md:text-[15px] text-[#6E6E6E]">
+       
+
+         <div className="md:px-[15px]  md:mb-5 md:border-b md:border-gray-300">
+          <p className="text-[12px] md:text-[15px] text-[#6E6E6E] ">
             {" "}
             Co-Founder, Executive Director
           </p>
-          <p className="text-[18px] md:text-[26px] ">Ashley Rumsey</p>
-          <p className="text-[12px] md:text-[14px] text-[#6E6E6E]">
+         
+          <p className=" text-[18px] md:text-[26px] text-[#000000]  ">
+            Ashley Rumsey
+          </p>
+          <p className="text-[12px] md:text-[15px] text-[#6E6E6E] ">
             BID Hons, NCIDQ, IDC, ARIDO, LEED AP
           </p>
-          <p className="text-[12px] md:text-[15px] text-[#6E6E6E] pt-[12px] pb-[18px] ">
+          <p className=" text-[12px] mt-[12.8px] mb-[18.8px] md:text-[15px]  text-[#6E6E6E] ">
             Ashley Rumsey brings the highest standards to both the design vision
             of projects and the management of the Mason Studio team. An advocate
             of purposeful design, Ashley has been a key part of the development
@@ -146,11 +151,13 @@ const page = () => {
             {" "}
             Co-Founder, Creative Director
           </p>
-          <p className="text-[18px] md:text-[26px] ">Stanley Sun</p>
-          <p className="text-[12px] md:text-[14px] text-[#6E6E6E]">
+          <p className="text-[18px] md:text-[26px] text-[#000000] ">
+            Stanley Sun
+          </p>
+          <p className="text-[12px] md:text-[15px] text-[#6E6E6E]">
             BID Hons, BSC Hons, NCIDQ, IDC, ARIDO, BCIN
           </p>
-          <p className="pt-[12px] text-[12.8px] md:text-[15px] text-[#6E6E6E] ">
+          <p className="md:mb-6 text-[12px] md:text-[15px] mt-[12.8px] text-[#6E6E6E]  ">
             Stanley Suns vision is informed by a unique blend of formal studies
             in human sciences, fine arts and interior design. Approaching each
             challenge with a combined scientific and humanistic perspective, he
@@ -163,10 +170,7 @@ const page = () => {
             conferences. He is also a sessional instructor at his alma mater,
             Toronto Metropolitan University.
           </p>
-
-          <div className="hidden md:block mt-[30px] mb-[20px]  border-b-[1px] border-gray-300 ">
-            {" "}
-          </div>
+          
         </div>
       </div>
 
@@ -178,54 +182,54 @@ const page = () => {
         <div className="md:col-span-1   md:px-[15px] ">
           <p className="text-[18px] pb-[15px] ">Awards</p>
           <ul>
-            <li className="text-[12px] ">
+            <li className="text-[12px] md:text-[15px] ">
               <span className="text-[#000000]">2020-ACD Awards /</span>
               <span className="text-[#6E6E6E]">Resilient Reatial Concept</span>
             </li>
 
-            <li className="text-[12px] ">
+            <li className="text-[12px] md:text-[15px] ">
               <span className="text-[#000000]">2011-ARIDO /</span>
               <span className="text-[#6E6E6E]">
                 Award of Merit: Cabin Residences
               </span>
             </li>
-            <li className="text-[12px] ">
+            <li className="text-[12px] md:text-[15px] ">
               <span className="text-[#000000]">2018-ACD Awards /</span>
               <span className="text-[#6E6E6E]">Resilient Reatial Concept</span>
             </li>
-            <li className="text-[12px] ">
+            <li className="text-[12px] md:text-[15px] ">
               <span className="text-[#000000]">2011-ARIDO /</span>
               <span className="text-[#6E6E6E]">
                 Award of Merit: Cabin Residences
               </span>
             </li>
-            <li className="text-[12px] ">
+            <li className="text-[12px] md:text-[15px] ">
               <span className="text-[#000000]">2015-ARIDO /</span>
               <span className="text-[#6E6E6E]">
                 Award of Merit - Virtuous Pie
               </span>
             </li>
-            <li className="text-[12px] ">
+            <li className="text-[12px] md:text-[15px] ">
               <span className="text-[#000000]">2014-Canadian Interiors /</span>
               <span className="text-[#6E6E6E]">Best of Canada</span>
             </li>
-            <li className="text-[12px] ">
+            <li className="text-[12px] md:text-[15px] ">
               <span className="text-[#000000]">2013-ACD Awards /</span>
               <span className="text-[#6E6E6E]">Resilient Reatial Concept</span>
             </li>
-            <li className="text-[12px] ">
+            <li className="text-[12px] md:text-[15px] ">
               <span className="text-[#000000]">
                 2012-Best of Canada Awards /
               </span>
               <span className="text-[#6E6E6E]">Andaz Hotel</span>
             </li>
-            <li className="text-[12px] ">
+            <li className="text-[12px] md:text-[15px] ">
               <span className="text-[#000000]">2011-ARIDO /</span>
               <span className="text-[#6E6E6E]">
                 Award of Merit: Cabin Residences
               </span>
             </li>
-            <li className="text-[12px] ">
+            <li className="text-[12px] md:text-[15px] ">
               <span className="text-[#000000]">2010-ACD Awards /</span>
               <span className="text-[#6E6E6E]">Resilient Reatial Concept</span>
             </li>
@@ -240,74 +244,74 @@ const page = () => {
           <p className="text-[18px] pb-[15px] ">Press</p>
 
           <ul>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2023 - Office Snapshots /</span>{" "}
               Mason Studio Integrated Workspace
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2023 - Trend Hunter /</span>{" "}
               Mason Studio Redesigned Its Toronto Office For The Greater Good{" "}
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2023 - BluPrint Magazine /</span>{" "}
               Work and Inspiration Mason Studio s Office as an ideal Workspace
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2023 - FRAME Magazine /</span>{" "}
               Can workplaces foster social wellbeing beyond their own employees?
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">
                 2023 - Canadian Interiors /
               </span>{" "}
               Creating Engagement - May/June 2023 cover feature
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2023 - The Toronto Star /</span>{" "}
               Making Contact across Toronto with award-winning photography
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2023 - Hotelier Magazine /</span>{" "}
               Hotel bathrooms become a focal point for designers
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2023 - Dezeen /</span> Mason
               Studio reimagines its Toronto workspace for the greater good
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2023 - NUVO Magazine /</span>{" "}
               Design Space: Lady Bird Bar by Mason Studio
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2022 - Interior Design /</span>{" "}
               10 Questions with Ashley Rumsey and Stanley Sun
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2022 - Azure /</span> Communal
               Condo Kitchen
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2022 - Designlines /</span> Mason
               Studio thoughtfully designs Regent Park Condominium
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2022 - Interior Design /</span>{" "}
               Kimpton Banneker Hotel in Washington, D.C.
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2022 - Wallpaper /</span> Mason
               Studio put the focus on local artists in the new Kimpton Banneker
               hotel in Washington, DC
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2022 - Azure /</span> 8 Inspiring
               Design Events To Check Out At DesignTO 2022
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2021 - Forbes /</span> LadyBird
               Washington DCs most stylish rooftop bar
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">
                 2021 - Interior Design China /
               </span>{" "}
@@ -321,53 +325,53 @@ const page = () => {
               <span className="text-[#000000]">2021 - House & Home /</span>{" "}
               Tommy Smythe - Latest Designers To Turn His Head
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2021 - Design Milk /</span>{" "}
               Friday Five
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2020 - Azure /</span> Rethinking
               Retail
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2020 - Designlines /</span> Show
               Us Where You Live
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2020 - Interior Design /</span>{" "}
               Mason Studio Designs Minimalist Shanghai Interior
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2020 - Pure Luxury /</span> The
               Beauty of Canadian Design
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2019 - Design Anthology /</span>{" "}
               New Hotels - Kimpton Saint George
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2019 - Design Milk /</span>{" "}
               Kimpton Saint George Hotel
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2019 - Toronto Life /</span>{" "}
               Kimpton Saint George Hotel
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2018 - Wallpaper /</span> Kimpton
               Saint George Hotel
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">2018 - New York Times /</span> An
               Ottawa Hotel is an ode to Canada
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">
                 2018 - Canadian Interiors /
               </span>{" "}
               Best of Canada: Hospitality, Andaz Hotel
             </li>
-            <li className="text-[12px] text-[#6E6E6E]">
+            <li className="text-[12px] md:text-[15px] text-[#6E6E6E]">
               <span className="text-[#000000]">
                 2018 - Canadian Interiors /
               </span>{" "}

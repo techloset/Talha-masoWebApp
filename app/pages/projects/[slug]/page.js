@@ -23,22 +23,22 @@ const Page = async ({ params }) => {
 
   return (
     <>
-      <div className="hidden  md:flex  md:mt-[10px] md:ml-[93%]  md:p-[10px]   md:fixed">
+      <div className="hidden  md:flex  md:mt-[10px] md:ml-[93%]  md:p-[10px]   md:fixed  ">
         <Link href="/pages/projects">
           <Image
             src="/images/cross.svg"
             alt="cross"
             width="100"
             height="100"
-            className=" mt-[8px]  w-[20px] h-[20px] cursor-pointer  "
+            className=" mt-[8px] w-[20px] h-[20px] cursor-pointer  "
           />
         </Link>
       </div>
 
-      <div className=" absolute -z-10 top-14 pl-[20px] pr-[20px] md:pt-[90px] md:pl-[90px] md:mr-[90px] ">
-        <h1 className=" h-[55px] pt-[10px] mb-[15px] text-[25.6px] ">{name}</h1>
+      <div className=" absolute -z-10  pl-[20px] pr-[20px] md:pt-[90px] md:pl-[90px] md:pr-[90px]  ">
+        <h1 className="  h-[55px] md:h-auto pt-[10px] mb-[15px] text-[25.6px] md:text-[44px] ">{name}</h1>
 
-        <div className="text-[12px] mt-[35px]  md:text-[15px]">
+        <div className="text-[12px] mt-[35px]  md:text-[15px]  ">
           <div className="md:flex">
             <div className=" pb-[20px] md:w-[50%]">
               <div className="mb-[10px]">
@@ -55,7 +55,7 @@ const Page = async ({ params }) => {
               </div>
             </div>
             <div className=" md:w-[50%] ">
-              <p className="text-[#6E6E6E] w-[93.5%] md:w-auto">
+              <p className="text-[#6E6E6E] w-[93.5%] md:w-auto leading-[22px]">
                 {" "}
                 {description}
               </p>
@@ -77,14 +77,14 @@ const Page = async ({ params }) => {
             ))}
           </div>
 
-          <div className="md:w-[100%] mt-[10px] md:flex md:flex-wrap md:gap-[10px] hidden">
+          <div className="md:w-[100%] mt-[10px] md:flex md:flex-wrap md:gap-[10px] lg:gap-[15px]  hidden">
             {imageUrls.map((imageUrl, index) => {
               return (
                 <>
                   {index % 3 !== 0 ? (
                     <div
                       key={index}
-                      className="md:relative md:flex md:justify-center md:p-[1px] md:w-[49.1%] md:h-[700px]  "
+                      className="md:relative md:flex md:justify-center md:p-[1px] md:w-[49.1%] lg:w-[49%] md:h-[700px]  "
                     >
                       <Image
                         key={index}
@@ -96,7 +96,7 @@ const Page = async ({ params }) => {
                   ) : (
                     <div
                       key={index}
-                      className="md:relative md:flex md:p-[10px] md:h-[700px] md:w-[100%]  "
+                      className="md:relative md:flex md:p-[10px] md:h-[700px] md:w-[99.5%]  "
                     >
                       <Image
                         key={index}

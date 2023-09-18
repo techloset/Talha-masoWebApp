@@ -64,7 +64,7 @@ const Header = () => {
                     className=" sm:w-[50%]"
                   >
                     {" "}
-                    <li className="text-[25.6px] mt-[9px] mb-[7px] text-[#00000080] ">
+                    <li className="text-[25.6px] md:text-[44px] mt-[9px] mb-[7px] text-[#00000080] ">
                       Projects
                     </li>{" "}
                   </Link>
@@ -79,7 +79,7 @@ const Header = () => {
                     className=" sm:w-[50%]"
                   >
                     {" "}
-                    <li className="  text-[25.6px] mt-[9px] mb-[7px] text-[#00000080]">
+                    <li className="  text-[25.6px] md:text-[44px] mt-[9px] mb-[7px] text-[#00000080]">
                       {" "}
                       About
                     </li>{" "}
@@ -95,7 +95,7 @@ const Header = () => {
                     className=" sm:w-[50%]"
                   >
                     {" "}
-                    <li className="text-[25.6px] mt-[9px] mb-[7px] text-[#00000080]">
+                    <li className="text-[25.6px] md:text-[44px] mt-[9px] mb-[7px] text-[#00000080]">
                       Culture Hub
                     </li>{" "}
                   </Link>
@@ -108,7 +108,7 @@ const Header = () => {
                     className=" sm:w-[50%]"
                   >
                     {" "}
-                    <li className="text-[25.6px]  mt-[9px] mb-[7px] text-[#00000080]  ">
+                    <li className="text-[25.6px] md:text-[44px]  mt-[9px] mb-[7px] text-[#00000080]  ">
                       Journal
                     </li>{" "}
                   </Link>
