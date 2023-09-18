@@ -7,7 +7,7 @@ import Footer from "@/app/component/footer/Footer";
 import Link from "next/link";
 
 const Header = () => {
-  const [navbar, setNavbar] = useState(true);
+  const [navbar, setNavbar] = useState(false);
 
   return (
     <>
