@@ -83,7 +83,7 @@ const Main = () => {
         kalaRang6
           ? "backgroundColorChange"
           : ""
-      }   mt-[10px] md:mt-[5px] px-[15px]   absolute top-10 -z-10 w-[100%] h-[88vh] md:top-0 md:p-[7.5px]  md:h-[98vh] overflow-y-hidden  `}
+      }   mt-[10px] md:mt-[5px] px-[15px] -z-10  absolute top-10  w-[100%] h-[88vh] md:top-0 md:p-[7.5px]  md:h-[98vh] overflow-y-hidden  `}
     >
       <div className="md:flex md:justify-evenly h-full md:h-full ">
         <div className=" mb-[10px] h-[70px] md:h-auto  md:mb-0  md:pl-[90px] md:pr-[90px] md:w-[80%]       ">

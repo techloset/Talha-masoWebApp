@@ -124,7 +124,7 @@ const ProjectDetail = ({ response }) => {
           </>
         </div>
 
-        <div className="md:imgParent md:col-span-6 md:p-[7.5px] ">
+        <div className="md:imgParent md:col-span-6 md:p-[7.5px] absolute z-10 ">
           <div className="md:imgSection">
             {itemsArray.map((item, index) => {
               let route = item.fields.slug.toLowerCase().replace(/\s+/g, "-");

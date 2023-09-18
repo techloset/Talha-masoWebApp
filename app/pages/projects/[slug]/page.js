@@ -2,7 +2,8 @@ import React from "react";
 import { Client } from "@/app/lib/contentful";
 import Image from "next/image";
 import Footer from "@/app/component/footer/Footer";
-import Link from "next/link";
+import BackButton from "./BackButton";
+// import Link from "next/link";
 
 const Page = async ({ params }) => {
   const response = await Client.getEntries({
@@ -23,20 +24,13 @@ const Page = async ({ params }) => {
 
   return (
     <>
-      <div className="hidden  md:flex  md:mt-[10px] md:ml-[93%]  md:p-[10px]   md:fixed  ">
-        <Link href="/pages/projects">
-          <Image
-            src="/images/cross.svg"
-            alt="cross"
-            width="100"
-            height="100"
-            className=" mt-[8px] w-[20px] h-[20px] cursor-pointer  "
-          />
-        </Link>
+      <div className=" ">
+        <BackButton />
       </div>
-
-      <div className=" absolute -z-10  pl-[20px] pr-[20px] md:pt-[90px] md:pl-[90px] md:pr-[90px]  ">
-        <h1 className="  h-[55px] md:h-auto pt-[10px] mb-[15px] text-[25.6px] md:text-[44px] ">{name}</h1>
+      <div className="  absolute -z-10 pl-[20px] pr-[20px] md:pt-[90px] md:pl-[90px] md:pr-[90px]  ">
+        <h1 className="  h-[55px] md:h-auto pt-[10px] mb-[15px] text-[25.6px] md:text-[44px] ">
+          {name}
+        </h1>
 
         <div className="text-[12px] mt-[35px]  md:text-[15px]  ">
           <div className="md:flex">

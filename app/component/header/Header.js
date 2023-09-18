@@ -7,13 +7,13 @@ import Footer from "@/app/component/footer/Footer";
 import Link from "next/link";
 
 const Header = () => {
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(true);
 
   return (
     <>
-      <div className="fixed w-[100%]  ">
+      <div className={`fixed w-[100%] ${navbar ? 'z-50' : 'z-0'} `}>
         {navbar ? (
-          <div className="  bg-[#F2CCBA] w-full h-screen md:pb-[30px] lg:flex lg:flex-col ">
+          <div className="   bg-[#F2CCBA] w-full h-screen md:pb-[30px] lg:flex lg:flex-col ">
             <div className=" flex justify-around   items-center px-[20px] md:w-[10%] ">
               <div className="md:hidden ">
                 <Link href="/" onClick={() => setNavbar(!navbar)}>
@@ -64,7 +64,7 @@ const Header = () => {
                     className=" sm:w-[50%]"
                   >
                     {" "}
-                    <li className="text-[25.6px] md:text-[44px] mt-[9px] mb-[7px] text-[#00000080] ">
+                    <li className="text-[25.6px] md:text-[44px] mt-[9px] mb-[7px] text-[#00000080] hover:text-[#000000] transition duration-500 ease-in-out  ">
                       Projects
                     </li>{" "}
                   </Link>
@@ -79,7 +79,7 @@ const Header = () => {
                     className=" sm:w-[50%]"
                   >
                     {" "}
-                    <li className="  text-[25.6px] md:text-[44px] mt-[9px] mb-[7px] text-[#00000080]">
+                    <li className="  text-[25.6px] md:text-[44px] mt-[9px] mb-[7px] text-[#00000080]  hover:text-[#000000] transition duration-500 ease-in-out ">
                       {" "}
                       About
                     </li>{" "}
@@ -95,7 +95,7 @@ const Header = () => {
                     className=" sm:w-[50%]"
                   >
                     {" "}
-                    <li className="text-[25.6px] md:text-[44px] mt-[9px] mb-[7px] text-[#00000080]">
+                    <li className="text-[25.6px] md:text-[44px] mt-[9px] mb-[7px] text-[#00000080] hover:text-[#000000] transition duration-500 ease-in-out ">
                       Culture Hub
                     </li>{" "}
                   </Link>
@@ -108,7 +108,7 @@ const Header = () => {
                     className=" sm:w-[50%]"
                   >
                     {" "}
-                    <li className="text-[25.6px] md:text-[44px]  mt-[9px] mb-[7px] text-[#00000080]  ">
+                    <li className="text-[25.6px] md:text-[44px]  mt-[9px] mb-[7px] text-[#00000080]   hover:text-[#000000] transition duration-500 ease-in-out ">
                       Journal
                     </li>{" "}
                   </Link>
