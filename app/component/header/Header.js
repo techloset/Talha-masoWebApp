@@ -40,7 +40,7 @@ const Header = () => {
               </div>
             </div>
 
-            <ul className="  h-full  px-[15px]  md:px-[90px]  ">
+            <ul className="  lg:mt-[10px]  h-full  px-[15px]  md:px-[90px]  ">
               <div className=" h-[60%]">
                 <div className="hidden md:block mt-[9px] mb-[12px]">
                   <Link href="/" onClick={() => setNavbar(!navbar)}>
@@ -55,7 +55,7 @@ const Header = () => {
                   </Link>
                 </div>
 
-                <div className="border-t-[1px] border-white  "></div>
+                <div className="border-t-[1px] border-gray  "></div>
 
                 <div className="sm:flex  md:block ">
                   <Link
@@ -69,7 +69,7 @@ const Header = () => {
                     </li>{" "}
                   </Link>
 
-                  <div className="border-t-[1px] border-white sm:hidden md:block">
+                  <div className="border-t-[1px] border-gray  sm:hidden md:block">
                     {" "}
                   </div>
 
@@ -86,7 +86,7 @@ const Header = () => {
                   </Link>
                 </div>
 
-                <div className="border-t-[1px] border-white "></div>
+                <div className="border-t-[1px] border-gray  "></div>
 
                 <div className="sm:flex md:block">
                   <Link
@@ -100,7 +100,7 @@ const Header = () => {
                     </li>{" "}
                   </Link>
 
-                  <div className="border-t-[1px] border-white sm:hidden md:block"></div>
+                  <div className="border-t-[1px] border-gray  sm:hidden md:block"></div>
 
                   <Link
                     href="/pages/journal"
@@ -114,11 +114,11 @@ const Header = () => {
                   </Link>
                 </div>
 
-                <div className="border-t-[1px] border-white "></div>
+                <div className="border-t-[1px] border-gray  "></div>
               </div>
 
-              <div className=" h-[40%]">
-                <div className="border-t-[1px] border-white "></div>
+              <div className=" h-[40%] lg:mt-[75px]">
+                <div className="border-t-[1px] border-gray  "></div>
                 <Footer />
               </div>
             </ul>

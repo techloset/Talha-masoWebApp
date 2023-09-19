@@ -11,7 +11,7 @@ const Footer = () => {
             <p>Send us an Email </p>
           </div>
 
-          <div className=" md:ml-[-30%] text-[#000000] ">
+          <div className=" md:ml-[-35%] text-[#000000] ">
             <p>91 Pelham Avenue</p>
             <p>Toronto, Canada</p>
             <p>M6N 1A5</p>

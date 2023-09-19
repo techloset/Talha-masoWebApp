@@ -85,21 +85,21 @@ const Main = () => {
           : ""
       }   mt-[10px] md:mt-[5px] px-[15px] -z-10  absolute top-10  w-[100%] h-[88vh] md:top-0 md:p-[7.5px]  md:h-[98vh] overflow-y-hidden  `}
     >
-      <div className="md:flex md:justify-evenly h-full md:h-full ">
+      <div className="md:flex md:justify-evenly h-full md:h-full  ">
         <div className=" mb-[10px] h-[70px] md:h-auto  md:mb-0  md:pl-[90px] md:pr-[90px] md:w-[80%]       ">
           <Image
             src="/images/mason.svg"
             alt="mason logo"
             height="100"
             width="100"
-            className="cursor-pointer  w-[50%] md:w-[80%] hidden md:block md:mt-[100px] lg:mt-[150px] "
+            className="cursor-pointer  w-[50%] md:w-[65%] lg:w-[50%] hidden md:block md:mt-[70px] lg:mt-[70px] "
           />
 
-          <div className="   leading-5 md:mt-[50px] md:leading-normal ">
-            <h2 className=" text-[#0A0A0A]    md:text-[24px] md:mt-[10px] ">
+          <div className="   leading-5 md:mt-[10px] lg:mt-[110px] md:leading-normal  ">
+            <h2 className=" text-[#0A0A0A]     md:text-[24px] md:mt-[10px] ">
               {headingText}
             </h2>
-            <p className="text-[#505050] sm:pt-[30px] md:pt-0 md:w-[85%] text-[18px] md:text-[26px]  ">
+            <p className="text-[#505050]    sm:pt-[30px] md:pt-0 md:w-[74%] text-[18px] md:text-[26px]  ">
               {paraText}
             </p>
           </div>
